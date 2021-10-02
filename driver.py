@@ -11,10 +11,9 @@ class Driver:
         self.paths["current"] = os.getcwd()
         self.paths["texts"]   = os.path.join(self.paths["current"], "texts")
         self.paths["Persai"]  = os.path.join(self.paths["texts"], "Persai")
-        self.paths["data"]    = os.path.join(self.paths["current"], "translations.json")
 
     def run(self) -> None:
-        with open("translations.json") as infile:
+        with open(os.path.join(self.paths["Persai"], "info.json")) as infile:
             data = json.load(infile)
 
         translations = []
