@@ -1,0 +1,44 @@
+[
+    {
+      "translator": "Ian Johnston",
+      "year": 2012,
+      "age": 74,
+      "text-file": "johnston.txt"
+    },
+    {
+      "translator": "Gilbert Murray",
+      "year": 1939,
+      "age": 73,
+      "text-file": "murray.txt"
+    },
+    {
+      "translator": "Robert Potter",
+      "year": 1777,
+      "age": 56,
+      "text-file": "potter.txt"
+    },
+    {
+      "translator": "George Murray",
+      "year": 1939,
+      "age": 0,
+      "text-file": "murray.txt"
+    },
+    {
+      "translator": "Herbert Weir Smyth",
+      "year": 1926,
+      "age": 69,
+      "text-file": "smyth.txt"
+    },
+    {
+      "translator": "Theodore Buckley",
+      "year": 1863,
+      "age": 0,
+      "text-file": "buckley.txt"
+    },
+    {
+      "translator": "Edward Plumptre",
+      "year": 1868,
+      "age": 47,
+      "text-file": "Plumptre.txt"
+    }
+]
