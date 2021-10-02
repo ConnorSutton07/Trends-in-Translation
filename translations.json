@@ -18,22 +18,16 @@
       "text-file": "potter.txt"
     },
     {
-      "translator": "George Murray",
+      "translator": "George Theodoridis",
       "year": 1939,
       "age": 0,
-      "text-file": "murray.txt"
+      "text-file": "theodoridis.txt"
     },
     {
-      "translator": "Herbert Weir Smyth",
-      "year": 1926,
-      "age": 69,
-      "text-file": "smyth.txt"
-    },
-    {
-      "translator": "Theodore Buckley",
-      "year": 1863,
-      "age": 0,
-      "text-file": "buckley.txt"
+      "translator": "E. D. A. Morshead",
+      "year": 1909,
+      "age": 60,
+      "text-file": "morshead.txt"
     },
     {
       "translator": "Edward Plumptre",
