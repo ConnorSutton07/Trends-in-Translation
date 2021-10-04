@@ -34,5 +34,11 @@
       "year": 1868,
       "age": 47,
       "text-file": "Plumptre.txt"
+    },
+    {
+      "translator": "Herbert Weir Smyth",
+      "year": 1926,
+      "age": 69,
+      "text-file": "smyth.txt"
     }
 ]
