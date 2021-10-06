@@ -11,7 +11,7 @@ class Translation:
         self.file = info['text-file']
         self.text = self.load_text(os.path.join(path, self.file))
         self.lines = len(self.text)
-        self.analyzer = SentimentIntensityAnalyzer()
+        self.polarity_score = SentimentIntensityAnalyzer().polarity_scores
 
     def print_info(self) -> None:
         print(f"{self.translator}, {self.year}. Lines: {self.lines}")
@@ -19,8 +19,11 @@ class Translation:
     def sentiment_by_line(self) -> np.array:
         sentiment = np.zeros((self.lines,))
         for i, line in enumerate(self.text):
-            sentiment[i] = self.analyzer.polarity_scores(line)['compound']
+            sentiment[i] = self.polarity_score(line)['compound']
         return sentiment
+
+    def overall_sentiment(self) -> dict:
+        return self.polarity_score(" \n ".join(self.text))
 
     @staticmethod
     def load_text(file: str) -> List[str]:
