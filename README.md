@@ -8,4 +8,4 @@ Experimenting with Aeschylus' *Persai*
 
 Some initial results, still WIP 
 
-![image](https://user-images.githubusercontent.com/55513603/137642252-c57c8678-be08-4efb-8f6c-35be2d7582ce.png)
+![image](https://user-images.githubusercontent.com/55513603/137642374-defe5bc7-a036-4a07-a04a-921e23b8c870.png)
