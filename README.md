@@ -8,4 +8,4 @@ Experimenting with Aeschylus' *Persai*
 
 Some initial results, still WIP 
 
-https://github.com/ConnorSutton07/Trends-in-Translation/blob/master/figures/persians_comparison.png?raw=true
+![image](https://user-images.githubusercontent.com/55513603/137642252-c57c8678-be08-4efb-8f6c-35be2d7582ce.png)
