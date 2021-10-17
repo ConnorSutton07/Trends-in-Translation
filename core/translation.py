@@ -33,7 +33,7 @@ class Translation:
             score = score_dict['pos'] - score_dict['neg']
             sign = score / np.abs(score)
             scores[index] = (score ** 2) * sign
-            print(i, index, scores[index])
+            #print(i, index, scores[index])
             index += 1
         return scores
 
