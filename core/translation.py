@@ -21,8 +21,23 @@ class Translation:
         for i, line in enumerate(self.text):
             sentiment[i] = self.polarity_score(line)['compound']
         return sentiment
+    
+    def sentiment_by_interval(self, divisor: int):
+        interval = self.lines // divisor
+        if self.lines % divisor != 0: interval += 1
+        scores = np.zeros((divisor,))
+        index = 0
+        for i in range(0, self.lines, interval):
+            section = self.text[i : i + interval]
+            score_dict = self.polarity_score(" \n ".join(section))
+            score = score_dict['pos'] - score_dict['neg']
+            sign = score / np.abs(score)
+            scores[index] = (score ** 2) * sign
+            print(i, index, scores[index])
+            index += 1
+        return scores
 
-    def overall_sentiment(self) -> dict:
+    def sentiment_by_whole(self) -> dict:
         return self.polarity_score(" \n ".join(self.text))
 
     @staticmethod

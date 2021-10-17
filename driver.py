@@ -20,12 +20,16 @@ class Driver:
         for info in data:
             translations.append(Translation(info, self.paths["Persai"]))
 
+        fig = plt.figure()
+        #plt.ylim([-1, 1])
+        sections = 30
         for t in translations:
             t.print_info()
-
-        s = translations[0].sentiment_by_line()
-        x = np.arange(s.size)
-
-        fig = plt.figure()
-        plt.plot(x, s)
+            s = t.sentiment_by_interval(sections)
+            x = np.arange(s.size)
+            plt.plot(x, s, label = t.translator)    
+        plt.title(t.translator)
+        plt.legend()
+        plt.xticks(np.arange(sections))
         plt.show()
+            
