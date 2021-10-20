@@ -24,12 +24,13 @@ class Driver:
         fig = plt.figure()
         #plt.ylim([-1, 1])
         sections = 30
-        title = f"Aeschylus' Persians, {sections} sections"
+        title = f"Aeschylus' Persians | Sentiment Over Time"
         for t in translations:
             t.print_info()
-            s = t.sentiment_by_interval(sections)
+            #s = t.sentiment_by_interval(sections)
+            s = t.sentiment_by_section()
             x = np.arange(s.size)
-            plt.plot(x, s, label = t.translator)    
+            plt.plot(x, s, label = t.get_info())    
         plt.title(title)
         plt.legend()
         plt.xticks(np.arange(sections))
