@@ -11,6 +11,7 @@ class Driver:
         self.paths["current"] = os.getcwd()
         self.paths["texts"]   = os.path.join(self.paths["current"], "texts")
         self.paths["Persai"]  = os.path.join(self.paths["texts"], "Persai")
+        self.paths["figures"] = os.path.join(self.paths["current"], "figures")
 
     def run(self) -> None:
         with open(os.path.join(self.paths["Persai"], "info.json")) as infile:
@@ -20,12 +21,21 @@ class Driver:
         for info in data:
             translations.append(Translation(info, self.paths["Persai"]))
 
+        fig = plt.figure()
+        #plt.ylim([-1, 1])
+        sections = 30
+        title = f"Aeschylus' Persians, {sections} sections"
         for t in translations:
             t.print_info()
-
-        s = translations[0].sentiment_by_line()
-        x = np.arange(s.size)
-
-        fig = plt.figure()
-        plt.plot(x, s)
+            s = t.sentiment_by_interval(sections)
+            x = np.arange(s.size)
+            plt.plot(x, s, label = t.translator)    
+        plt.title(title)
+        plt.legend()
+        plt.xticks(np.arange(sections))
+        plt.xlabel("Interval")
+        plt.ylabel("Positivity / Negativity")
+        plt.savefig(os.path.join(self.paths["figures"], "persians_comparison.png"))
         plt.show()
+        
+            
