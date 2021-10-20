@@ -1,6 +1,3 @@
-Scene.—Susa, in front of the palace of Xerxes, the tomb
-of Dareios occupying the position of the thymele
-Enter Chorus of Persian Elders.
 We the title bear of Faithful,[3]
 Friends of Persians gone to Hellas,
 Watchers left of treasure city,[4]
@@ -8,6 +5,9 @@ Gold-abounding, whom, as oldest,
 Xerxes hath himself appointed,
 He, the offspring of Dareios,
 As the warders of his country.
+
+# 
+
 And about our king's returning,
 And our army's, gold-abounding,
 Over-much, and boding evil,
@@ -19,13 +19,16 @@ Sorely frets: nor courier cometh,
 Nor any horseman, bringing tidings
 To the city of the Persians.
 From Ecbatana departing,
-20Susa, or the Kissian fortress,[5]
+Susa, or the Kissian fortress,[5]
 Forth they sped upon their journey,
 Some in ships, and some on horses,
 Some on foot, still onward marching,
 In their close array presenting
 Squadrons duly armed for battle:
 20
+
+#
+
 Then Armistres, Artaphernes,
 Megabazes, and Astaspes,
 Mighty leaders of the Persians,
@@ -45,7 +48,10 @@ And the chief of sacred Memphis;
 Great Arsames, Ariomardos,
 Ruler of primeval Thebæ,
 And the marsh-men,[7] and the rowers,
-21Dread, and in their number countless.
+Dread, and in their number countless.
+
+#
+
 40
 And there follow crowds of Lydians,
 Very delicate and stately,[8]
@@ -62,13 +68,19 @@ On the neck of conquered Hellas.
 50
 Mardon, Tharabis, spear-anvils,[10]
 And the Mysians, javelin-darting;[11]
+
+#
+
 Babylôn too, gold-abounding,
 Sends a mingled cloud, swept onward,
-22Both the troops who man the vessels,
+Both the troops who man the vessels,
 And the skilled and trustful bowmen;
 And the race the sword that beareth,
 Follows from each clime of Asia,
 At the great King's dread commandment.
+
+#
+
 These, the bloom of Persia's greatness,
 Now are gone forth to the battle;
 60
@@ -77,6 +89,9 @@ Asia, mourns with mighty yearning;
 Wives and mothers faint with trembling
 Through the hours that slowly linger,
 Counting each day as it passes.
+
+#
+
 Strophe I
 The king's great host, destroying cities mighty,
 Hath to the land beyond the sea passed over,
@@ -85,6 +100,9 @@ Crossing the straits of Athamantid Helle,[12]
 On raft by ropes secured,
 And thrown his path, compact of many a vessel,
 As yoke upon the neck of mighty ocean.
+
+#
+
 Antistrophe I
 Of populous Asia thus the mighty ruler
 'Gainst all the land his God-sent host directeth
@@ -93,23 +111,32 @@ Trusting the chieftains stern,
 The men who drive the host to fight, relentless—
 He, sprung from gold-born race, a hero godlike.[13]
 80
-23Strophe II
+Strophe II
+
+#
+
 Glancing with darkling look, and eyes as of ravening dragon,
 With many a hand, and many a ship, and Syrian chariot driving,[14]
 He upon spearmen renowned brings battle of conquering arrows.[15]
+
+#
+
 Antistrophe II
 Yea, there is none so tried as, withstanding the flood of the mighty,
 90
 To keep within steadfast bounds that wave of ocean resistless;
 Hard to fight is the host of the Persians, the people stout-hearted.
+
+#
+
 Mesode
 Yet ah! what mortal can ward the craft of the God all-deceiving?
-*Who, with a nimble foot, of one leap is easily sovereign?
+Who, with a nimble foot, of one leap is easily sovereign?
 For Atè, fawning and kind, at first a mortal betraying,
 100
 Then in snares and meshes decoys him,
 Whence one who is but man in vain doth struggle to 'scape from.
-24Strophe III
+Strophe III
 For Fate of old, by the high Gods' decree,
 Prevailed, and on the Persians laid this task,
 Wars with the crash of towers,
