@@ -33,7 +33,7 @@ class Driver:
             plt.plot(x, s, label = t.get_info())    
         plt.title(title)
         plt.legend()
-        plt.xticks(np.arange(sections))
+        plt.xticks(np.arange(1, sections))
         plt.xlabel("Interval")
         plt.ylabel("Positivity / Negativity")
         plt.savefig(os.path.join(self.paths["figures"], "persians_comparison.png"))

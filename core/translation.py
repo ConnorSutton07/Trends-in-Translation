@@ -38,7 +38,7 @@ class Translation:
             index += 1
         return scores
 
-    def sentiment_by_section(self):
+    def sentiment_by_section(self, amplification = 5):
         entire_text = " \n ".join(self.text)
         print(f"Sections: {entire_text.count('#')}")
         sections = entire_text.split('#')
@@ -46,8 +46,10 @@ class Translation:
 
         index = 0
         for section in sections:
+            if index < len(sections) - 1:
+                section = section[:-1] # remove the delimiter label
             info = self.polarity_score(section)
-            scores[index] = self.distance_score(info)
+            scores[index] = self.distance_score(info) * amplification
             index += 1
         return scores
 
@@ -57,6 +59,7 @@ class Translation:
 
     def distance_score(self, info: dict) -> float:
         score = info['pos'] - info['neg']
+        #return score
         sign = score / np.abs(score) if score != 0 else 1
         return (score ** 2) * sign
 
