@@ -1,18 +1,21 @@
 from __future__ import annotations
 from typing import List
 from nltk.sentiment import SentimentIntensityAnalyzer
+from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 import os
 import numpy as np
 
 class Translation:
     def __init__(self, info: dict, path: str, delimiter: str = '#') -> Translation:
         self.translator = info['translator']
+        self.lastname = self.translator.split(" ")[-1]
         self.year = info['year']
         self.file = info['text-file']
         self.text = self.load_text(os.path.join(path, self.file))
         self.lines = len(self.text)
         self.polarity_score = SentimentIntensityAnalyzer().polarity_scores
         self.delimiter = delimiter
+        self.stopwords = ["ye", "thy", "thee", "hast", "chorus", "strophe", "antistrophe", "thou", "pg", "o'er", "chor", "hath"]
 
     def print_info(self) -> None:
         print(f"{self.translator}, {self.year}. Lines: {self.lines}")
@@ -53,7 +56,6 @@ class Translation:
             index += 1
         return scores
 
-
     def sentiment_by_whole(self) -> dict:
         return self.polarity_score(" \n ".join(self.text))
 
@@ -63,6 +65,10 @@ class Translation:
         sign = score / np.abs(score) if score != 0 else 1
         return (score ** 2) * sign
 
+    def generate_wordcloud(self) -> WordCloud:
+        stopwords = set(STOPWORDS)
+        stopwords.update(self.stopwords)
+        return WordCloud(stopwords = stopwords, background_color = "white").generate(" \n ".join(self.text))
 
     @staticmethod
     def load_text(file: str) -> List[str]:
