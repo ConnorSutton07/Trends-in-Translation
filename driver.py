@@ -16,11 +16,13 @@ class Driver:
     def run(self) -> None:
         with open(os.path.join(self.paths["Persai"], "info.json")) as infile:
             data = json.load(infile)
-
         translations = []
         for info in data:
             translations.append(Translation(info, self.paths["Persai"]))
 
+        self.plot_wordcloud(translations)
+        
+    def plot_sentiment(self, translations: list) -> None:
         fig = plt.figure()
         #plt.ylim([-1, 1])
         sections = 30
@@ -38,5 +40,12 @@ class Driver:
         plt.ylabel("Positivity / Negativity")
         plt.savefig(os.path.join(self.paths["figures"], "persians_comparison.png"))
         plt.show()
-        
-            
+
+    def plot_wordcloud(self, translations: list) -> None:
+        for t in translations:
+            t.print_info()
+            plt.figure()
+            plt.imshow(t.generate_wordcloud(), interpolation = 'bilinear')
+            plt.axis('off')
+            plt.savefig(os.path.join(self.paths["figures"], "wordcloud_" + t.lastname + ".jpg"))
+            #plt.show()
