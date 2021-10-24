@@ -8,7 +8,7 @@ so rich in gold, the men Xerxes himself,
 our king, son of Darius, has chosen
 to supervise his realm. 
 
-# 
+1# 
 
 But here inside,
 my heart has for a long time been troubled
@@ -24,7 +24,7 @@ our forces moved away, some on horseback,
 some by ship, some on foot—a close-packed mass                    [20]
 prepared for war—
 
-#
+2#
 
 men like Artaphrenes,
 Amistres, Astaspes, and Megabates,                                    20
@@ -46,7 +46,7 @@ Ariomardos, who rules in ancient Thebes,
 and from the marshes men who row the ships,
 a frightening horde in countless numbers.
 
-#
+3#
 
 And with them goes a crowd of Lydians,                                  [40]
 luxury loving men, whose force controls
@@ -61,7 +61,7 @@ the yoke of slavery upon the Greeks—
 Mardon and Tharybis, with thunderbolts
 for spears, and Mysians armed with javelins.(3)
 
-#
+4#
 
 And Babylon, awash with gold, sends out
 huge columns of men of different kinds,                            50
@@ -71,7 +71,7 @@ The sabre-bearing races also come
 from all of Asia, following the king,
 a fearful expedition on the march!
 
-#
+5#
 
 Warriors like these move out, the flower                                    [60]
 of Persian lands, while all of Asia yearns.
@@ -79,7 +79,7 @@ Their nurturing mother now longs for them
 and groans with fierce desire, as wives and children
 count the days and shudder at the long delay.                    60
 
-#
+6#
 
 CHORUS
 
@@ -92,7 +92,7 @@ on a floating bridge tied down with cable                                  [70]
 and throwing the yoke of a tight-knit road
 across the neck of the sea.(4)
 
-#
+7#
 
 Through every land
 the fiery king of a massive Asian horde
@@ -101,7 +101,7 @@ in a double formation by land and sea,
 with trust in his brave and stern commanders,
 our golden born and godlike king.                                             [80]
 
-#
+8#
 
 His dark eyes burn
 with the glare of a snake aroused to kill.
@@ -110,7 +110,7 @@ he urges his Syrian chariot on,
 leading his archers like a war god’s host
 to fight against men renowned for their spears.
 
-#
+9#
 
 No man has the strength to repel this force,
 this irresistible torrent of men,                                           80
@@ -119,12 +119,14 @@ the overpowering surge of the sea.                                             [
 For warriors fill our Persian ranks,
 our invincible force of fearless men.
 
-#
+A#
 
 By decrees of the gods since earliest times,
 Fate has ruled all and has always ordained
 that Persians wage war, knocking down towers,
 fighting in chariots, and demolishing cities.
+
+B#
 
 By trusting their finely made cables and ships
 our men have now learned how to gaze on the deep          90     [100]
@@ -140,11 +142,15 @@ spreads her nets wide and lures the man in.
 There is no escape—that trap she sets
 no man evades by springing back once more.
 
+C#
+
 Such matters hang black thoughts around my heart           100
 and tear at it with fear. Alas for them,
 the soldiers of that mighty Persian force!
 May our great city Sousa never hear
 a cry like that or learn its men have died.
+
+D#
 
 And Kissa’s city folk will then all chant                                       [120]
 their own song in reply—Alas! That crowd
@@ -163,7 +169,7 @@ each one with a woman’s heartfelt yearning
 for the fearless warrior she sent away.
 Her man is gone, and now she sleeps alone.
 
- 
+E# 
 
 CHORUS LEADER
 
@@ -176,7 +182,7 @@ Xerxes, son of Darius. Have Persian archers
 drawn their bows and won, or have the Greeks
 with the power of their sharp spears prevailed?
 
- 
+F#
 
 [Atossa enters with attendants](5)
 
@@ -202,7 +208,7 @@ the mother of their god—unless perhaps
 the divinity they used to have of old
 has now abandoned Persian warriors.
 
- 
+G# 
 
 ATOSSA
 
@@ -227,7 +233,7 @@ Persians, you old trustworthy counsellors,
 advise me what to do, since all my hopes
 for level-headed guidance rest on you.
 
- 
+H#
 
 CHORUS LEADER
 
@@ -238,7 +244,7 @@ to say or do. You have summoned us here
 as counsellors in this affair, and we
 are well disposed to serve your interests.
 
- 
+I#
 
 ATOSSA
 
@@ -256,6 +262,9 @@ and very beautiful. They were sisters,
 of the same family line. One of them
 lived in Hellenic lands, assigned by lot,
 the other dwelt among barbarians.(7)
+
+J#
+
 And as I watched, I seemed to see these two
 begin to fight each other. Then my son,
 once he learned of this, tried to hold them back                180
@@ -270,6 +279,9 @@ My son fell out headfirst, and Darius,
 his father, who stood close by, was grieving.
 Then Xerxes, when he saw his father there,                        190
 shred the garments covering his body.
+
+K#
+
 That was the dream I saw during the night.                               [200]
 When I got up, I went to wash my hands
 in a flowing spring, and holding up a gift,
@@ -292,7 +304,7 @@ but even if he fails, those in the city                                   210
 cannot hold him accountable, for Xerxes,
 if he gets safely back, still rules this land.
 
- 
+L#
 
 CHORUS LEADER
 
@@ -316,7 +328,7 @@ and as a friend I give you this advice.
 I sense that in these matters everything                             230
 will turn out favourably for you.
 
- 
+M#
 
 ATOSSA
 
@@ -332,7 +344,7 @@ But, friends, there is one thing I wish to know.                  240    [230]
 In what part of the world do people say
 this city of Athens is located?
 
- 
+N#
 
 CHORUS LEADER
 
@@ -439,7 +451,7 @@ Why else would a Persian man be rushing here.
 He must be bringing news of some event—
 it’s clearly something good or bad.
 
- 
+O#
 
 [Enter the Messenger, in great haste. He falls prostrate before Atossa and delivers his first speeches from his knees]
 
@@ -457,7 +469,7 @@ and yet, you Persians, I must now provide
 a full report of that catastrophe—
 our whole barbarian army has been killed!
 
- 
+P#
 
 CHORUS
 
@@ -475,7 +487,7 @@ Yes, weep, for all those men have been wiped out,                     [260]
 while I look on this unexpected day
 when I have come back home.
 
- 
+Q#
 
 CHORUS
 
@@ -508,7 +520,7 @@ MESSENGER
 The corpses fill the shores of Salamis
 and all the coasts nearby—our wretched dead.(10)
 
- 
+R#
 
 CHORUS
 
@@ -554,7 +566,7 @@ We well recall how Athens made
 so many Persian women widows
 by slaughtering their men.(11)
 
- 
+S#
 
 ATOSSA
 
@@ -573,11 +585,8 @@ appointed to a sceptre-bearing post,
 which ones have died and left a vacancy
 among the ranks of our commanders?
 
- 
-
 [The Messenger stands up.]
 
- 
 
 MESSENGER
 
@@ -585,20 +594,14 @@ Xerxes himself survived—he is alive
 and sees the light of day.
 
  
-
 ATOSSA
-
-                                   What you have said
+What you have said
 brings a great light of hope into my home,                                [300]
 a bright dawn after grim black drapes of night.
 
- 
+T#
 
 MESSENGER
-
- 
-
- 
 
 But Artembares, who led ten thousand horse,
 is being smashed against the cruel shores
@@ -619,6 +622,9 @@ and Arcteus. And Matallos from Chryse,
 who ruled an army of ten thousand men,
 as he died, stained his thick, dark, shaggy beard
 and changed its colour with a blood-red dye.
+
+U#
+
 Arabos the Magian perished there,
 and so did Artabes from Bactria,
 who led black horsemen thirty thousand strong
@@ -638,7 +644,7 @@ fought valiantly and died. I have listed
 these men by name, but we lost so many!
 What I have told you mentions just a few.                                 [330]
 
- 
+V#
 
 ATOSSA
 
@@ -682,7 +688,7 @@ MESSENGER
 Yes. While its citizens are still alive
 it has a fortress that will never fail.
 
- 
+W#
 
 ATOSSA
 
@@ -710,8 +716,6 @@ or the envy of the gods.(14) So once he heard
 what the man had said, he quickly issued
 the following orders to his captains:
 
- 
-
 “When the sun’s rays no longer warm the earth
 and darkness seizes regions of the sky,
 draw up the ships into a triple line
@@ -722,7 +726,7 @@ escape their evil fate and somehow find
 a secret way to steal off in their ships,                                [370]
 my orders are that all will lose their heads.”
 
- 
+X#
 
 When Xerxes said these words, his heart and mind
 were fully confident—he had no inkling
@@ -761,15 +765,15 @@ advanced in order. Then the entire force                                   [400]
 moved up, and, as it did, we all could hear
 a mighty cry:
 
- 
+Y#
 
-                               “You offspring of the Greeks,    460
+“You offspring of the Greeks,    460
 come on! Free your native home! Free your wives,
 your children, the temples of your father’s gods,
 the burial places of your ancestors!
 The time has come to fight for all of these!”
 
- 
+Z#
 
 We responded with a confusing shout
 from Persian tongues, but by now the crisis
@@ -806,7 +810,7 @@ For you must understand that never before
 has such an enormous multitude of men
 all perished in a single day.
 
- 
+1# 
 
 ATOSSA
 

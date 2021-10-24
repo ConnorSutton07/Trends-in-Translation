@@ -10,7 +10,7 @@ To watch the wealth of him who went—
 Guards of the gold, and faithful styled
 By Xerxes, great Darius’ child!
 
-#
+1#
 
 But the king went nor comes again—
 And for that host, we saw depart
@@ -28,7 +28,7 @@ Some upon steeds, on galleys some,
 Some in close files, they passed from home,
 All upon warlike errand bent—
 
-#
+2#
 
 Amistres, Artaphernes went,
 Astaspes, Megabazes high,
@@ -53,7 +53,7 @@ From Thebes the immemorial came,
 And oarsmen skilled from Nilus’ fen,
 A countless crowd of warlike men:
 
-#
+3#
 
 
 And next, the dainty Lydians went—
@@ -74,7 +74,7 @@ Bright anvils for the foemen’s spear!
 The Mysian dart-men sped to war,
 And the long crowd that onward rolled
 
-#
+4#
 
 From Babylon enriched with gold—
 Captains of ships and archers skilled
@@ -83,7 +83,7 @@ The scimitar;—the eastern band
 Who, by the great king’s high command,
 Swept to subdue the western land!
 
-#
+5#
 
 Gone are they, gone—ah, welladay!
 The flower and pride of our array;
@@ -94,7 +94,7 @@ Parents for sons, and brides new-wed
 For absent lords, and, day by day,
 Shudder with dread at their delay!
 
-#
+6#
 
 Ere now they have passed o’er the sea, the manifold host of the king—
 They have gone forth to sack and to burn; ashore on the Westland they spring!
@@ -103,37 +103,42 @@ O’er the strait that is named by thy name, O daughter of Athamas!
 They have anchored their ships in the current, they have bridled the neck of the sea—
 The Shepherd and Lord of the East hath bidden a roadway to be!
 
-#
+7#
 
 From the land to the land they pass over, a herd at the high king’s best;
 Some by the way of the waves, and some o’er the planking have pressed.
 For the king is a lord and a god: he was born of the golden seed
 That erst upon Danae fell—his captains are strong at the need!
 
-#
+8#
 
 And dark is the glare of his eyes, as eyes of a serpent blood-fed,
 And with manifold troops in his train and with manifold ships hath he sped—
 Yea, sped with his Syrian cars: he leads on the lords of the bow
 To meet with the men of the West, the spear-armed force of the foe!
 
-#
+9#
 
 Can any make head and resist him, when he comes with the roll of a wave?
 No barrier nor phalanx of might, no chief, be he ever so brave!
 For stern is the onset of Persia, and gallant her children in fight.
 
-#
+A#
 
 But the guile of the god is deceitful, and who shall elude him by flight?
 And who is the lord of the leap, that can spring and alight and evade?
 For Até deludes and allures, till round him the meshes are laid,
 And no man his doom can escape! it was writ in the rule of high Heaven,
 That in tramp of the steeds and in crash of the charge the war-cry of Persia be given:
+
+B#
+
 They have learned to behold the forbidden, the sacred enclosure of sea,
 Where the waters are wide and in stress of the wind the billows roll hoary to lee!
 And their trust is in cable and cordage, too weak in the power of the blast,
 And frail are the links of the bridge whereby unto Hellas they passed.
+
+C#
 
 Therefore my gloom-wrapped heart is rent with sorrow
 For what may hap to-morrow!
@@ -141,6 +146,9 @@ Alack, for all the Persian armament—
 Alack, lest there be sent
 Dread news of desolation, Susa’s land
 Bereft, forlorn, unmanned—
+
+D#
+
 Lest the grey Kissian fortress echo back
 The wail, Alack, Alack!
 The sound of women’s shriek, who wail and mourn,
@@ -159,6 +167,8 @@ Wails for her widowed fate—
 Alas my gallant bridegroom, lost and gone,
 And I am left alone!
 
+E#
+
 But now, ye warders of the state,
 Here, in this hall of old renown,
 Behoves that we deliberate
@@ -169,6 +179,8 @@ The Persian king, from Perseus styled?
 
 Comes triumph to the eastern bow,
 Or hath the lance-point conquered now?
+
+F#
 
 Enter ATOSSA.
 
@@ -183,6 +195,8 @@ Queen, among deep-girded Persian dames thou highest and most royal,
 Hoary mother, thou, of Xerxes, and Darius’ wife of old!
 To godlike sire, and godlike son, we bow us and are loyal—
 Unless, on us, an adverse tide of destiny has rolled!
+
+G#
 
 ATOSSA.
 Therefore come I forth to you, from chambers decked and golden,
@@ -205,11 +219,15 @@ So runs the saw, ye aged men! and truth it says indeed—
 On you I call, the wise and true, to ward us from disaster,
 For all my hope is fixed on you, to prop us in our need!
 
+H#
+
 CHORUS.
 Queen-Mother of the Persian land, to thy commandment bowing,
 Whate’er thou wilt, in word or deed, we follow to fulfil—
 Not twice we need thine high behest, our faith and duty knowing,
 In council and in act alike, thy loyal servants still!
+
+I#
 
 ATOSSA.
 Long while by various visions of the night
@@ -225,6 +243,9 @@ Than women of to-day, and beautiful
 Beyond disparagement, and sisters sprung
 Both of one race, but, by their natal lot,
 One born in Hellas, one in Eastern land.
+
+J#
+
 These, as it seemed unto my watching eyes,
 Roused each the other to a mutual feud:
 The which my son perceiving set himself
@@ -239,6 +260,8 @@ With mouth un-bitted: o’er the broken yoke
 My son was hurled, and lo! Darius stood
 In lamentation o’er his fallen child.
 Him Xerxes saw, and rent his robe in grief.
+
+K#
 
 Such was my vision of the night now past;
 But when, arising, I had dipped my hand
@@ -260,6 +283,8 @@ He shall come back the wonder of the world:
 If not, still none can call him to account—
 So he but live, he liveth Persia’s King!
 
+L#
+
 CHORUS.
 Queen, it stands not with my purpose to abet these fears of thine,
 Nor to speak with glazing comfort! nay, betake thee to the shrine!
@@ -274,6 +299,8 @@ And hold the gloomy fates of ill, dim in the dark below!
 Such be thy words! my inner heart good tidings doth foretell,
 And that fair fate will spring thereof, if wisdom guide us well.
 
+M#
+
 ATOSSA.
 Loyal thou that first hast read this dream, this vision of the night,
 With loyalty to me, the queen—be then thy presage right!
@@ -281,6 +308,8 @@ And therefore, as thy bidding is, what time I pass within
 To dedicate these offerings, new prayers I will begin,
 Alike to gods and the great dead who loved our lineage well.
 Yet one more word—say, in what realm do the Athenians dwell?
+
+N#
 
 CHORUS.
 Far hence, even where, in evening land, goes down our Lord the Sun.
@@ -329,6 +358,8 @@ Nay—as I deem, the very truth will dawn on us to-day.
 A Persian by his garb and speed, a courier draws anear—
 He bringeth news, of good or ill, for Persia’s land to hear.
 
+O#
+
 Enter a MESSENGER.
 
 MESSENGER.
@@ -341,12 +372,16 @@ Woe on the man who first announceth woe—
 Yet must I all the tale of death unroll!
 Hark to me, Persians! Persia’s host lies low.
 
+P#
+
 CHORUS.
 O ruin manifold, and woe, and fear!
 Let the wild tears run down, for the great doom is here!
 
 MESSENGER.
 This blow hath fallen, to the utterance, And I, past hope, behold my safe return!
+
+Q#
 
 CHORUS.
 Too long, alack, too long this life of mine,
@@ -365,6 +400,8 @@ Hellas, beloved of Heaven!
 MESSENGER.
 Piled with men dead, yea, miserably slain,
 Is every beach, each reef of Salamis!
+
+R#
 
 CHORUS.
 Thou sayest sooth—ah well-a-day!
@@ -393,6 +430,8 @@ Thou, Athens, art our murderess;
 Alack, full many a Persian dame
 Is left forlorn and husbandless!
 
+#S
+
 ATOSSA.
 Mute have I been awhile, and overwrought
 At this great sorrow, for it passeth speech,
@@ -411,6 +450,8 @@ Xerxes himself survives and sees the day.
 ATOSSA.
 Then to my line thy word renews the dawn
 And golden dayspring after gloom of night!
+
+T#
 
 MESSENGER.
 But the brave marshal of ten thousand horse,
@@ -434,6 +475,9 @@ Three times ten thousand swarthy cavaliers,
 Fell, with his swarthy and abundant beard
 Incarnadined to red, a crimson stain
 Outrivalling the purple of the sea!
+
+U#
+
 There Magian Arabus and Artames
 Of Bactra perished—taking up, alike,
 In yonder stony land their long sojourn.
@@ -451,6 +495,8 @@ Than whom none dealt more carnage on the foe,
 Nor perished by a more heroic end.
 So fell the brave: so speak I of their doom,
 Summing in brief the fate of myriads!
+
+V#
 
 ATOSSA.
 Ah well-a-day! these crowning woes I hear,
@@ -484,6 +530,8 @@ How then? is Athens yet inviolate?
 MESSENGER.
 While her men live, her bulwark standeth firm!
 
+W#
+
 ATOSSA.
 Say, how began the struggle of the ships?
 Who first joined issue? did the Greeks attack,
@@ -511,7 +559,11 @@ The isle of Ajax, with this warning word—
 That if the Greeks their jeopardy should scape
 By wary craft, and win their ships a road.
 Each Persian captain shall his failure pay
-By forfeit of his head. So spake the king,
+By forfeit of his head. 
+
+X#
+
+So spake the king,
 Inspired at heart with over-confidence,
 Unwitting of the gods’ predestined will.
 Thereon our crews, with no disordered haste,
@@ -546,10 +598,17 @@ The right wing first in orderly advance
 Came on, a steady column; following then,
 The rest of their array moved out and on,
 And to our ears there came a burst of sound,
-A clamour manifold.—On, sons of Greece!
+A clamour manifold.—
+
+X#
+
+On, sons of Greece!
 On, for your country’s freedom! strike to save
 Wives, children, temples of ancestral gods,
 Graves of your fathers! now is all at stake.
+
+Z#
+
 Then from our side swelled up the mingled din
 Of Persian tongues, and time brooked no delay—
 Ship into ship drave hard its brazen beak
@@ -579,6 +638,8 @@ Until the night’s dark aspect hid the scene.
 Had I a ten days’ time to sum that count
 Of carnage, ’twere too little! know this well—
 One day ne’er saw such myriad forms of death!
+
+1#
 
 ATOSSA.
 Woe on us, woe! disaster’s mighty sea

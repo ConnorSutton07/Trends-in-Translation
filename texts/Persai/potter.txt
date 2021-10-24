@@ -7,7 +7,7 @@ Hold faithful our firm guard; to this high charge
 Xerxes, our royal lord, the imperial son
 Of great Darius, chose our honour'd age.
 
-#
+1#
 
 But for the king's return, and his arm'd host
 Blazing with gold, my soul presaging ill
@@ -22,7 +22,7 @@ Some on the bounding steed, the tall bark some
 Ascending, some with painful march on foot,
 Haste on, to arrange the deep'ning files of war.
 
-#
+2#
 
 Amistres, Artaphernes, and the might
 Of great Astaspes, Megabazes bold,
@@ -44,7 +44,7 @@ That reigns o'er sacred Memphis, great Arsames;
 And Ariomardus, that o'er ancient Thebes
 Bears the supreme dominion;
 
-#
+3#
 
 and with these,
 Drawn from their watery marshes, numbers train'd
@@ -62,7 +62,7 @@ Mardon and Tharybis the massy spear
 Grasp with unwearied vigour; the light lance
 The Mysians shake. 
 
-#
+4#
 
 A mingled multitude
 Swept from her wide dominions skill'd to draw
@@ -71,7 +71,7 @@ From golden Babylon. With falchions arm'd
 From all the extent of Asia move the hosts
 Obedient to their monarch's stern command.
 
-#
+5#
 
 Thus march'd the flower of Persia, whose loved youth
 The world of Asia nourish'd, and with sighs
@@ -79,7 +79,7 @@ Laments their absence; many an anxious look
 Their wives, their parents send, count the slow days,
 And tremble at the long-protracted time.
 
-#
+6#
 
 strophe 1
 
@@ -92,7 +92,7 @@ They bridge across the indignant sea;
 The narrow Hellespont's vex'd waves disdain,
 His proud neck taught to wear the chain.
 
-#
+7#
 
 Now has the peopled Asia's warlike lord,
 By land, by sea, with foot, with horse,
@@ -101,7 +101,7 @@ O'er all their realms his warring thousands pour'd;
 Now his intrepid chiefs surveys,
 And glitt'ring like a god his radiant state displays.
 
-#
+8#
 
 antistrophe 1
 
@@ -113,12 +113,17 @@ Rolls onward his Assyrian car,
 Directs the thunder of the war,
 Bids the wing'd arrows' iron storm advance
 Against the slow and cumbrous lance.
+
+9#
+
 What shall withstand the torrent of his sway
 When dreadful o'er the yielding shores
 The impetuous tide of battle roars,
 And sweeps the weak opposing mounds away?
 So Persia, with resistless might,
 Rolls her unnumber'd hosts of heroes to the fight.
+
+A#
 
 strophe 2
 
@@ -137,6 +142,8 @@ Shake with their thund'ring steeds the ensanguined plain,
 Dreadful the hostile walls surround,
 And lay their rampired towers in ruins on the ground.
 
+B#
+
 antistrophe 2
 
 Taught to behold with fearless eyes
@@ -145,6 +152,9 @@ They bid the naval forests rise,
 Mount the slight bark, unfurl the flying sail,
 And o'er the angry ocean bear
 To distant realms the storm of war.
+
+C#
+
 For this with many a sad and gloomy thought
 My tortured breast is fraught:
 Ah me! for Persia's absent sons I sigh;
@@ -153,6 +163,8 @@ Our towns exposed to wild affright
 An easy prey to the invader lie:
 Where, mighty Susa, where thy powers,
 To wield the warrior's arms, and guard thy regal towers?
+
+D#
 
 epode
 
@@ -177,6 +189,8 @@ Throb with desire, with aching fondness glow,
 Since in bright arms her daring warrior dress'd
 Left her to languish in her love-lorn wo.
 
+E#
+
 Now, ye grave Persians, that your honour'd seats
 Hold in this ancient house, with prudent care
 And deep deliberation, so the state
@@ -192,6 +206,8 @@ Her lustre blazes on our eyes: my queen,
 Prostrate I fall before her: all advance
 With reverence, and in duteous phrase address her,
 
+F#
+
 ATOSSA enters with her retinue. The Elders do their obeisance to her.
 
 
@@ -203,6 +219,7 @@ Imperial consort of Darius, hail!
 The wife, the mother of the Persians' god,
 If yet our former glories fade not from us.
 
+G#
 
 ATOSSA
 
@@ -227,6 +244,7 @@ Advise me then, you whose experienced age
 Supports the state of Persia: prudence guides
 Your councils, always kind and faithful to me.
 
+H#
 
 LEADER
 
@@ -235,6 +253,7 @@ We want no second bidding, where our power
 In word or deed waits on our zeal: our hearts
 In this with honest duty shall obey thee.
 
+I#
 
 ATOSSA
 
@@ -250,7 +269,11 @@ With more than mortal majesty they moved,
 Of peerless beauty; sisters too they seem'd,
 Though distant each from each they chanced to dwell,
 In Greece the one, on the barbaric coast
-The other. 'Twixt them soon dissension rose:
+The other. 
+
+J#
+
+'Twixt them soon dissension rose:
 My son then hasted to compose their strife,
 Soothed them to fair accord, beneath his car
 Yokes them, and reins their harness'd necks. The one,
@@ -264,6 +287,9 @@ His father stands, Darius, at his fall
 Impress'd with pity: him when Xerxes saw,
 Glowing with grief and shame he rends his robes.
 This was the dreadful vision of the night.
+
+K#
+
 When I arose, in the sweet-flowing stream
 I bathed my hands, and on the incensed altars
 Presenting my oblations to the gods
@@ -281,6 +307,7 @@ The state indeed presumes not to arraign
 His sovereignty; yet how, his honour lost,
 How shall he sway the sceptre of this land?
 
+L#
 
 LEADER
 
@@ -302,6 +329,7 @@ This, in the presage of my thoughts that flow
 Benevolent to thee, have I proposed;
 And all, we trust, shall be successful to thee.
 
+M#
 
 ATOSSA
 
@@ -315,6 +343,7 @@ In order meet, when I return; meanwhile
 Indulge me, friends, who wish to be inform'd
 Where, in what clime, the towers of Athens rise.
 
+N#
 
 LEADER
 
@@ -395,6 +424,8 @@ Each circumstance; for this way, mark him, speeds
 A Persian messenger; he bears, be sure,
 Tidings of high import, or good or ill.
 
+O#
+
 A MESSENGER enters.
 
 
@@ -409,6 +440,7 @@ That bears unhappy tidings: but constraint
 Compels me to relate this tale of wo.
 Persians, the whole barbaric host is fall'n.
 
+P#
 
 CHORUS chanting
 
@@ -422,6 +454,7 @@ MESSENGER
 It is ev'n so, all ruin; and myself,
 Beyond all hope returning, view this light.
 
+Q#
 
 CHORUS chanting
 
@@ -447,6 +480,7 @@ MESSENGER
 In heaps the unhappy dead lie on the strand
 Of Salamis, and all the neighbouring shores.
 
+R#
 
 CHORUS chanting
 
@@ -480,6 +514,7 @@ How dreadful to her foes! Call to remembrance
 How many Persian dames, wedded in vain,
 Hath Athens of their noble husbands widow'd?
 
+S#
 
 ATOSSA
 
@@ -505,6 +540,7 @@ ATOSSA
 That word beams comfort on my house, a ray
 That brightens through the melancholy gloom.
 
+T#
 
 MESSENGER
 
@@ -524,6 +560,9 @@ Fell from one ship. Matallus, Chrysa's chief,
 That led his dark'ning squadrons, thrice ten thousand,
 On jet-black steeds, with purple gore distain'd
 The yellow of his thick and shaggy beard.
+
+U#
+
 The Magian Arabus, and Artames
 From Bactra, mould'ring on the dreary shore
 Lie low. Amistris, and Amphistreus there
@@ -541,6 +580,7 @@ A terror, there too found a glorious death.
 These chieftains to my sad remembrance rise,
 Relating but a few of many ills.
 
+V#
 
 ATOSSA
 
@@ -576,6 +616,7 @@ MESSENGER
 The walls of Athens are impregnable,
 Their firmest bulwarks her heroic sons.
 
+W#
 
 ATOSSA
 
@@ -604,7 +645,11 @@ And guard each pass, each outlet of the seas:
 Others enring around this rocky isle
 Of Salamis. Should Greece escape her fate,
 And work her way by secret flight, your heads
-Shall answer the neglect." This harsh command
+Shall answer the neglect."
+
+X#
+
+This harsh command
 He gave, exulting in his mind, nor knew
 What Fate design'd. With martial discipline
 And prompt obedience, snatching a repast,
@@ -633,11 +678,17 @@ Rush'd on in view: in orderly array
 The squadron on the right first led, behind
 Rode their whole fleet; and now distinct we heard
 From ev'ry part this voice of exhortation:-
+
+Y#
+
 "Advance, ye sons of Greece, from thraldom save
 Your country, save your wives, your children save,
 The temples of your gods, the sacred tomb
 Where rest your honour'd ancestors; this day
 The common cause of all demands your valour."
+
+Z#
+
 Meantime from Persia's hosts the deep'ning shout
 Answer'd their shout; no time for cold delay;
 But ship 'gainst ship its brazen beak impell'd.
@@ -668,6 +719,7 @@ Ten times on my unfinished tale the sun
 Would set; for be assured that not one day
 Could close the ruin of so vast a host.
 
+1#
 
 ATOSSA
 

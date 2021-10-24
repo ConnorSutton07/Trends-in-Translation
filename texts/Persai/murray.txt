@@ -9,7 +9,7 @@ Xerxes, Darius-born,
 For age and honour hath extolled
 To watch his land forlorn. 
 
-#
+1#
 
 And while we wait his homecoming,
 For him and for his golden host
@@ -27,7 +27,7 @@ We saw the horse and chariot go,
 The gliding ships, the footmen slow,
 In pomp of war far-thrown.
 
-#
+2#
 
 Among them men of mighty name,
 Amistras, Artaphernes, came,
@@ -52,7 +52,7 @@ From ageless Thebes, with river men
 Who bend the bow and stride the fen,
 Multitudes dark and fell.
 
-#
+3#
 
 We saw the armies proud and gay
 Of Lydia, who in thralldom sway
@@ -70,7 +70,7 @@ And Tharybis, anvils of the spear;
 There, rank by rank, the Mysian lance
 Flashed; and with trailing wide advance
 
-#
+4#
 
 There swept the golden Babylon
 Her motley nations on and on;
@@ -81,7 +81,7 @@ Of Asia's hidden valleys, rude
 But faithful, followed, row on row,
 King's men untameable.
 
-#
+5#
 
 —So hath the flower of Persia's youth
 Departed, whom in strong desire
@@ -92,7 +92,7 @@ Full many a wife and mother stay
 Waiting as day still followeth day,
 And dread the lengthening tale.
 
-#
+6#
 
 [Strophe 1[Pg 22   65-86]
 —They are gone, the great armies battle-proven,
@@ -103,7 +103,7 @@ For they sought a path and found it,
 And with many fetters bound it
 For a yoke upon the shoulders of the tide.
 
-#
+7#
 
 [Antistrophe 1
 And the dread King, his multitudes he guideth
@@ -114,7 +114,7 @@ From the shower of heavenly gold
 Were his fathers sprung of old,
 And god-like among mortals doth he stand.
 
-#
+8#
 
 [Strophe 2
 In his dark eye is the glare of a serpent, flashing fear;
@@ -122,7 +122,7 @@ Many-handed, many-navied, he hath spurred his Syrian car;
 He descendeth on the nations; he has baffled the strong spear
 With the bow-shaft that slayeth from afar.
 
-#
+9#
 
 [Antistrophe 2[Pg 23   87-106]
 In whom, then, confide ye, to withstand the armèd flood,
@@ -130,13 +130,15 @@ Put his gyves upon the storm and enchain the rushing tide?
 For the armies of the Persian none living hath withstood,
 And the land's heart laugheth in its pride.
 
-#
+A#
 
 [Strophe 3
 So it hath been from of old; the o'erthrowing of strong towers
 Is the birthright of the Persian, god-appointed to his trust;
 And the thunder of the horsemen and their gladness, it is ours,
 And the trampling of cities in the dust.
+
+B#
 
 [Antistrophe 3
 We have turned us to the sea, and no fear is in our mind;
@@ -149,6 +151,8 @@ Can the runner run so swift, can the leaper leap so high?
 Man seeeth but a smile, and lo, Atê is beside him,
 With the net none outclimbeth till he die.
 
+C#
+
 [Strophe 4
 —Therefore doth my spirit mourn,
 Robed in darkness, stabbed with fear,
@@ -157,6 +161,8 @@ Lest a cry the people hear,
 Woe for Persia's host forlorn,"
 Ringing through the wide unmanned
 Streets of Susa's lonely land.
+
+D#
 
 [Antistrophe 4
 And the ancient Kissian hold
@@ -182,6 +188,9 @@ Yearning for her man, her own
 Battle-fiery warrior, gone
 Forth amid the flashing spears,
 Bears the yoke alone.
+
+E#
+
 Leader.
 
 —Peace! And before this ancient pile,
@@ -196,6 +205,9 @@ One cometh, Mother to the King
 And Queen to me. I bow the knee.
 Persians, to her be reverence given
 By all, and words of welcoming.
+
+F#
+
 [As the Elders move right and left to sit upon the steps the Queen enters in her chariot of state with many followers.
 
 [Pg 26   155-167]
@@ -206,6 +218,9 @@ O Queen most high, above all Persia's deep-girt daughters glorified,
 Thou Xerxes' reverend Mother, Hail! All hail to thee, Darius' bride.
 A god of Persia gave thee love, a god of Persia hast thou born,
 Unless that star that shone of old hath faded from this land forlorn.
+
+G#
+
 Atossa.
 
 For that I came. For that I left my chambers canopied with gold,
@@ -221,6 +236,9 @@ Wealth, arms, and ships enough are ours. Yet for the Eye of all the land[Pg 27  
 I tremble. Is not Persia's Eye her King? Therefore I ask of you
 Your counsel in this fear, my Persians, ye the agèd and the true,
 In whom for faithful words and wise my trust is and has ever been.
+
+H#
+
 Leader.
 
 Thou art the mistress of the land, and ne'er shalt summon twice, O Queen,
@@ -228,6 +246,8 @@ Our aid in counsel or in act, where'er we have the power to guide;
 Servants true-hearted in thy need are these thou callest to thy side.
 [Atossa descends from the Chariot.
 Atossa.
+
+I#
 
 Long have I dwelt with visions through the hours
 Of darkness, ever since, with all his powers
@@ -242,6 +262,9 @@ Grander they seemed than earthly women are,
 Of flawless beauty, sisters of one race.[Pg 28   185-211]
 Each had her home in its appointed place,
 In Hellas one, and one in Barbary.
+
+J#
+
 Then rose between them, so I seemed to see,
 Some discord; and my son saw, and would fain
 Calm them, and make them gentle to the rein
@@ -256,6 +279,9 @@ And my son fell. And there beside him stood
 His father, King Darius, pityingly.
 And Xerxes, when he saw him, gave a cry
 And rent his robes. So much I saw in dream.
+
+K#
+
 I rose and quickly in a flowing stream
 Cleansed me, and with an incense-bearing train
 Approached our altar-stair, to pour amain
@@ -273,6 +299,9 @@ Victorious, shall be alway among men[Pg 29   212-225]
 A wonder; if he fail . . . Nay, even then,
 Once saved, he abideth no man's reckoning,
 But reigneth still unchallenged, Persia's King.
+
+L#
+
 Leader.
 
 O Mother of the Land, we fain would neither turn thee to despair,
@@ -288,6 +317,8 @@ No prophet I; only in love I speak, with seercraft of the mind,
 Thy dream so reading that, whate'er it bode, the end may griefless be.
 [Pg 30   226-235]
 
+M#
+
 Atossa.
 
 So be it! First reader of my dreams, a loving seer I find in thee;
@@ -296,6 +327,9 @@ That which is good may Heaven fulfil! These issues, as thy counsel runs,
 I lay upon the gods above and the beloved who lie below;
 So saying I go within.—Yet stay. There is a thing I fain would know;
 Say where, in all this peopled world, a city men call Athens lies?
+
+N#
+
 Leader.
 
 Far distant, where our Lord the Sun sinks and his last effulgence dies.
@@ -347,6 +381,9 @@ Leader.
 But stay; methinks thou soon shalt hear the full tale, yea, the certainty.
 I see out yonder one that runs as runs the Persian couriers; Oh,
 For sure some certain news at last he beareth, be it weal or woe!
+
+O#
+
 [Enter the Messenger.
 Messenger.
 
@@ -360,6 +397,8 @@ The full tale of our sorrow. The whole host[Pg 33   255-271]
 Of Barbary, O my countrymen, is lost!
 [He breaks down in tears, and in the following scene only recovers himself for a moment at a time.
 
+P#
+
 Chorus.          [Strophe 1
 
 O pain, burden of pain
@@ -370,6 +409,9 @@ Messenger.
 
 All yonder, all is death. Alone I come
 And beyond hope, to see the light of home.
+
+Q#
+
 Chorus.          [Antistrophe 1
 
 This life, 'tis a tale long told
@@ -392,6 +434,9 @@ Messenger.
 
 Crowded with dead men miserably lost
 Is Salamis, and the bay, and all the coast.
+
+R#
+
 Chorus.          [Antistrophe 2
 
 They whom we loved, Ah me,
@@ -420,6 +465,8 @@ Remember the widows, the childless, the unmated:
 These things hath Athens wrought.
 [Pg 35   290-309]
 
+S#
+
 Atossa.
 
 Long have I held my peace, as one struck dumb
@@ -438,6 +485,9 @@ Atossa.
 
 That word is joy to all my house, a bright
 Gleam, as of morning after starless night.
+
+T#
+
 Messenger.
 
 But Artembar lies battered—he the chief
@@ -456,6 +506,9 @@ Pharnouchos, fell, three from a single barque.
 Lordly Metallos, Chryse's myriadarch,
 The tangled forest of his beard so red
 Hath dyed a costlier crimson; he lies dead.
+
+U#
+
 Ahrab the Mede, and Bactrian Artabas,
 Who led three myriad coal-black horse, alas!
 Drowning, upon a cruel shore they found
@@ -470,6 +523,9 @@ Alas, in death not happy! And withal
 Syennesis, the highest heart of all,
 Cilicia's lord, none like him in the fray,
 Ringed with dead Greeks, in glory passed away.
+
+V#
+
 Atossa.
 
 Alas, thy tale is as a mountain steep
@@ -499,6 +555,9 @@ How so? Does Athens yet unbroken stand?
 Messenger.
 
 While her men live, she hath a breechless wall.
+
+W#
+
 Atossa.
 
 How first began the battle? Tell me all.
@@ -526,6 +585,9 @@ The narrow ways and races loud with foam.
 Else, if the Greeks escaped an evil doom
 Finding some secret way of flight, he said,
 Each master of a ship would lose his head.
+
+X#
+
 Such was his word; right full of mirth was he,
 So little guessed he what the end should be!
 In order and obedience all the fleet
@@ -555,10 +617,18 @@ The briny furrows at the helmsman's word,
 And all the ships were out and clear to view.
 The right wing led the van, in order due,
 Behind it the whole fleet, prow after prow.
-Then one great shout: "Now, sons of Hellas, now!
+Then one great shout: 
+
+Y#
+
+"Now, sons of Hellas, now!
 Set Hellas free, set free your wives, your homes,
 Your gods' high altars and your fathers' tombs.
-Now all is on the stake!" At once from us
+Now all is on the stake!" 
+
+Z#
+
+At once from us
 A storm of Persian voices clamorous
 Made answer, but no time was left to speak.
 Already ship on ship its brazen beak
@@ -588,6 +658,9 @@ Not though for ten long days, day after day,
 I spoke, could I express that mass of woe.
 For never yet—this ye may surely know—
 Have on one day so many thousands died.
+
+1#
+
 Atossa.
 
 Ah me, a flood of suffering deep and wide

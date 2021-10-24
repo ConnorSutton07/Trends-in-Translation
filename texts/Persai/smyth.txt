@@ -3,7 +3,7 @@ Here we are, the faithful Council of the Persians, who have gone to the land of 
 [5]
 we whom Xerxes, our King, Darius' royal son, himself selected, by virtue of our rank and years, to be the guardians of his realm. 
 
-#
+1#
 
 Yet as regards the return of our King and of his host, so richly decked out in gold,
 [10]
@@ -13,7 +13,7 @@ arrive at the city of the Persians, who left behind them the walled defence of S
 [20]
 presenting a dense array of war. 
 
-#
+2#
 
 Such are Amistres and Artaphrenes and Megabates  and Astaspes, marshals of the Persians; kings themselves, yet vassals of the Great King,
 [25]
@@ -25,7 +25,7 @@ Pegastagon of Egyptian lineage, mighty Arsames, lord of sacred Memphis, Ariomard
 [40]
 well-skilled and countless in number.
 
-#
+3#
 
 
 Behind them follows a throng of luxurious Lydians and those who hold in subjection all the people of the mainland, whom Metrogathes and brave Arcteus, their regal commanders,
@@ -34,26 +34,26 @@ and Sardis rich in gold sent forth, riding in many a chariot, in ranks with thre
 [50]
 to cast the yoke of slavery upon Hellas Mardon, Tharybis, anvils of the lance, and the Mysians, hurlers of the javelin. 
 
-#
+4#
 
 Babylon, also, teeming with gold, sends a mixed host arrayed in a long line, both mariners borne in galleys
 [55]
 and those who rely on their skill in archery.  The nation too which wears the sabre follows from every part of Asia in the fearful procession of the King. 
 
-#
+5#
 
 Such are the warriors, the flower of the Persian land,
 [60]
 who have departed, and in fierce longing for them the whole land of Asia, their foster-nurse, laments, while parents and wives, as they count the days, shudder at the lengthening delay.
 
-#
+6#
 
 [65]
 The royal army, dealing destruction to cities, has already passed to the neighboring land upon the facing shore,  and this they did by crossing the Hellespont,
 [70]
 named for the daughter of Athamas, on a bridge of boats made fast with cables, thereby casting a tightly constructed roadway as a yoke upon the neck of the sea.  
 
-#
+7#
 
 The fiery lord of populous Asia
 [75]
@@ -61,26 +61,26 @@ is leading his wondrous warrior-flock against the whole earth in two divisions, 
 [80]
 a god-like hero whose race is sprung from gold.  
 
-#
+8#
 
 With eyes flashing with the dark glare of a deadly dragon, attended by soldiers and mariners in great numbers, and speeding his Syrian chariot,
 [85]
 he leads against a people renowned for the spear a warlike host of archers.  
 
-#
+9#
 
 And there is no man skilled to withstand the mighty stream of men, and with strong barriers keep out the sea's invincible surge;
 [90]
 for Persia's host cannot be withstood, and her men are courageous.  
 
-#
+A#
 
 
 For by the will of the gods Fate has held sway
 [95]
 since ancient time, and has ordained for the Persians the pursuit of rampart-destroying war, the turmoil of fighting horsemen, and the  storming of cities.  
 
-
+B#
 
 [100]
 And they have learned to look upon the precinct of the deep when the broad-wayed sea whitens to foam beneath the tempest's blast, trusting in their finely wrought
@@ -95,12 +95,12 @@ and escape its toils?
 
 For Delusion, with her fair appearance, lures men astray into her snares, from which it is not possible to escape without meeting with disaster.  
 
-
+C#
 
 [115]
 Therefore  my heart is wrapped in gloom and is racked with fear for the Persian army lest the state  learn that the mighty capital of   is empty of men.  
 
-
+D#
 
 [120]
 Fearful I am too that as bands of women cry aloud  woe,  the Cissian stronghold will raise a resounding shout responsive  to the beating of breasts,
@@ -117,12 +117,14 @@ And marriage-beds are filled with tears through longing for husbands;
 [135]
 each Persian woman has sent to the field her warlike and fiery consort, and now in grief and longing for her beloved lord, is left forsaken by her mate.  
 
-
+E#
 
 [140]
 But come, Persians, let us take our place on the steps of this ancient palace and devise some wise and deeply-pondered counsel for need of this has come upon us as to how Xerxes our King,
 [145]
 Darius' son, scion of our own race as his forefather's name declares, is faring.  Is it the drawing of the bow that has triumphed, or is it the might of the sharp spear-head  which has prevailed?   
+
+F#
 
 [150]
 But look, here is a light like the eyes of the god, the mother of our king, my Queen.  I bow low before her.  It is fitting also that we all address her with words of salutation.    
@@ -130,10 +132,10 @@ But look, here is a light like the eyes of the god, the mother of our king, my Q
 
 
 [155]
-O Queen, most exalted of  's deep-girdled women, venerable mother of Xerxes, wife of Darius, all hail! You were the consort of the Persian's god, and of another god the mother, that is, unless its former good fortune has now forsaken our host.  
+O Queen, most exalted of Persia's deep-girdled women, venerable mother of Xerxes, wife of Darius, all hail! You were the consort of the Persian's god, and of another god the mother, that is, unless its former good fortune has now forsaken our host.  
 
 
-
+G#
 
 For this very reason I have left the gold-decorated palace
 [160]
@@ -143,22 +145,30 @@ It is for this reason that there is a double concern in my mind: neither to hold
 [170]
 Therefore, since things stand as they do, lend me your counsel in this concern, Persians, my aged trusty servants.  For all my hopes of good counsel depend on you. 
 
+H#
 
 Be assured, our country's Queen, that you need not twice mention either word or deed regarding that in which it is possible for us to direct you.
 [175]
 For we whom you summon as counsellors in these matters are well disposed towards you and your interests.  
 
+I#
 
 I have been haunted by a multitude of dreams at night since the time when my son, having despatched his army, departed with intent to lay waste the land of the Ionians.  But never yet have I beheld so distinct a vision
 [180]
 as that of the last night.  This I will describe to you. 
 I dreamed that two women in beautiful clothes, one in Persian garb, the other in Dorian attire, appeared before my eyes; both far more striking in stature than are the women of our time,
 [185]
-flawless in beauty, sisters of the same family. As for the lands in which they dwelt, to one had been assigned by lot the land of  , to the other that of the barbarians.  The two, as I imagined it, seemed to provoke each other to a mutual feud, and my son,  when he had become aware of this,
+flawless in beauty, sisters of the same family. As for the lands in which they dwelt, to one had been assigned by lot the land of Hellas , to the other that of the barbarians.  
+
+J#
+
+The two, as I imagined it, seemed to provoke each other to a mutual feud, and my son,  when he had become aware of this,
 [190]
 attempted to restrain and placate them. He yoked them both to his car and placed the collar-straps upon their necks.  The one bore herself proudly in these trappings and kept her mouth obedient to the rein.  The other struggled and with her hands
 [195]
 tore apart the harness of the car; then, free of the curb,  she dragged it violently along with her and snapped the yoke in two.  My son was hurled to the ground and his father Darius stood by his side filled with pity.  But Xerxes, when he caught sight of him, tore the garments covering his body.  
+
+K#
 
 [200]
 Such was the vision I beheld in the night. But when I had risen and dipped my hands in the clear-flowing water of a spring, I drew near to an altar with incense in my hand, intending to make an offering of sacrificial cake to the divinities that avert evil, those to whom these rites are due.
@@ -168,9 +178,7 @@ But I saw an eagle fleeing for safety to the altar of Phoebus and out of terror,
 yielded its body to his foe. 
 These are the terrors I beheld, terrors too for you to hear. Be assured that if my son should suceeed, he would prove to be remarkable indeed, but if he fails, he does not have to answer to the state; if he returns safely, he will hold sway in this land as he did before.
 
-
-
-
+L#
 
 [215]
 Mother, we would neither alarm you unduly by our words nor raise your hopes too high.  If, however, it is something inauspicious that you have seen, visit the gods with supplication and entreat them to avert the evil and to bring to pass what will be beneficial to you, your children, the kingdom, and all else that you hold dear.  Next, it is appropriate that you should
@@ -179,11 +187,13 @@ offer libations to Earth and the dead; and use auspicious words to address your 
 [225]
 According to our interpretation of these portents, the issue will in all respects prove prosperous to you. 
 
+M#
 
 You, its first interpreter, have indeed read the meaning of my dream with goodwill, at least, toward my son and house.  May the outcome then prove beneficial! When I return to the palace, I will perform for the gods and my dear ones beneath the earth all those rites which you recommend. Meanwhile, my friends, I would like to learn
 [230]
-where   is located.  
+where Athens is located.  
 
+N#
 
 Far from here, to the west where the last rays of our Lord the Sun set. 
 
@@ -235,15 +245,15 @@ In truth, your words have given the fathers and mothers of those who are now on 
 
 No, rather I think that you will soon learn the truth of the matter.  For here comes one who is beyond a doubt a Persian courier.  He bears clear tidings of some issue, be it good or bad.  
 
+O#
 
-O cities of all the land of  ,
+O cities of all the land of Asia,
 [250]
-O realm of  , and bounteous haven of wealth, at a single stroke all your plenteous prosperity has been shattered, and the flower of the Persians has fallen and perished!  Ah, it is a terrible task to be the first to deliver news of disaster.  And yet, Persians, I must relate the entirety of the calamity
+O realm of Persia, and bounteous haven of wealth, at a single stroke all your plenteous prosperity has been shattered, and the flower of the Persians has fallen and perished!  Ah, it is a terrible task to be the first to deliver news of disaster.  And yet, Persians, I must relate the entirety of the calamity
 [255]
  the whole barbarian  host is lost.  
 
-
-
+P#
 
 Grievous, grievous disaster, strange and cruel.  Alas, Persians, weep now that you hear of this calamity.  
 
@@ -257,17 +267,19 @@ The life which has been given to us elders is too long, for we have now heard
 [265]
 of this unexpected misery.  
 
+Q#
 
 Since I myself was present and did not merely hear what happened from the report of others, I can tell you exactly what kind of disaster was wrought.  
 
 
 Alas, alas!  In vain did our vast and variously armed host
 [270]
-go forth from the land of   against the hostile soil of  .  
+go forth from the land of Asia against the hostile soil of Hellas.  
 
 
-Full of the bodies of men who perished by a miserable fate are the shores of   and all the neighboring coasts.  
+Full of the bodies of men who perished by a miserable fate are the shores of Salamis and all the neighboring coasts.  
 
+R#
 
 Alas, alas!  You say that the bodies of our loved ones,
 [275]
@@ -282,17 +294,15 @@ Our bows were of no use, and the whole host has perished, overwhelmed when ship 
 Raise a doleful and mournful wail for the Persians, the wretched Persians, since they have met with complete and utter ruin.  Alas for the destruction of our host!  
 
 
-O name of   most odious to my ears!
+O name of Salamis most odious to my ears!
 [285]
-Alas, how I groan when I recall the memory of  !  
+Alas, how I groan when I recall the memory of Athens!  
 
 
-Ah, hateful indeed is   to her foes.  Now must we remember how many Persian women she has deprived of sons and husbands, lost all in vain.
+Ah, hateful indeed is Athens to her foes.  Now must we remember how many Persian women she has deprived of sons and husbands, lost all in vain.
 [290]
 
-
-
-
+S#
 
 Long have I kept silent in my misery, struck with dismay at our disaster; for this calamity is so great that it is not possible to say or even to ask about its extent. Nevertheless mortals must endure affliction when it is heaven-sent.
 [295]
@@ -306,21 +316,28 @@ Xerxes himself lives and beholds the light.
 
 The words you utter bring a great light of joy into my house, and bright day after night wrapped in gloom. 
 
+T#
+
 
 But Artembares, commander of ten thousand cavalrymen, is being battered now against Silenia's cruel shore. And Dadaces, leader of a thousand men, leapt, struck by a spear,
 [305]
 with a nimble bound from his ship. Tenagon, the true-born Bactrians' chieftain, is ranging now around the surf-beaten isle of Ajax.  Lilaeus and Arsames, and, third, Argestes,
 [310]
-kept buffeting against its rugged shore, whirled around about the island, the breeding-place of doves. Arcteus, too, who lived by the waters of the Egyptian Nile, Adeues, and Pharnuchus of the mighty shield all these were hurled out of one ship.  Matallus of  , commander of ten thousand,
+kept buffeting against its rugged shore, whirled around about the island, the breeding-place of doves. Arcteus, too, who lived by the waters of the Egyptian Nile, Adeues, and Pharnuchus of the mighty shield all these were hurled out of one ship.  Matallus of Chrysa, commander of ten thousand,
 [315]
-leader of the Black Cavalry, thirty thousand strong, in death dyed red his thick and shaggy beard, changing its color with a deep crimson stain. Arabus, too, the Magian, perished there, and Bactrian Artabes, a settler now in a rugged land.
+leader of the Black Cavalry, thirty thousand strong, in death dyed red his thick and shaggy beard, changing its color with a deep crimson stain. 
+
+U#
+
+Arabus, too, the Magian, perished there, and Bactrian Artabes, a settler now in a rugged land.
 [320]
-Amistris, and Amphistreus, wielder of a painful spear, and brave Ariomardus, whose death brought grief to  , and Seisames the Mysian, and Tharybis, admiral of five times fifty ships, a Lyrnaean by descent, a man of physical beauty,
+Amistris, and Amphistreus, wielder of a painful spear, and brave Ariomardus, whose death brought grief to Sardis, and Seisames the Mysian, and Tharybis, admiral of five times fifty ships, a Lyrnaean by descent, a man of physical beauty,
 [325]
 lies dead in a state of misery, no longer attended by good fortune.  Syennesis, also, the governor of the Cilicians, foremost in courage, he whose prowess did the foe most harm, found there a glorious death.  Such were the leaders about whom I was making my report.
 [330]
 Although our losses were many, I announce but few.  
 
+V#
 
 Alas!  The words I hear put the very crown upon our woes; a disgrace to the Persians and cause for shrill lament.  But retrace your tale and tell me this clearly:
 [335]
@@ -334,13 +351,13 @@ and, in addition to these, there was a chosen squadron of ten.  But Xerxes, this
 No, it was some divine power that tipped the scale of fortune with unequal weight and thus destroyed our host.  The gods preserve the city of the goddess Pallas. 
 
 
-Is then the city of   not yet despoiled? 
+Is then the city of Athens not yet despoiled? 
 
 
 No, while her men still live, her ramparts are impregnable.
 [350]
 
-
+W#
 
 But the beginning of the encounter of the fleets,  tell me about  it.  Who began the onset?  Was it the Hellenes?  Or my son, exulting in the multitude of his ships?  
 
@@ -353,7 +370,11 @@ to preserve their lives by stealthy flight.  But Xerxes, when he heard this, com
 [365]
 and darkness had covered the region of the sky, they should bring up in a tight group the main body of the fleet, disposed in triple line, to bar the exits and the sounding straits, and station other ships in a circle around the island of Ajax. He gave them a warning too that, should the Hellenes escape an evil doom,
 [370]
-finding by stealth some means of flight for their fleet, it had been decreed that every captain should lose his head.  These commands he made with complete confidence of heart, since he knew not the issue intended by the gods.  Our crews then, with no lack of order but with an obedient spirit,
+finding by stealth some means of flight for their fleet, it had been decreed that every captain should lose his head.  
+
+X#
+
+These commands he made with complete confidence of heart, since he knew not the issue intended by the gods.  Our crews then, with no lack of order but with an obedient spirit,
 [375]
 prepared their evening meal, while each sailor looped his oar about its thole-pin so that it fitted well.  But when the light of the sun had faded and night drew on, each master of an oar and each man versed in arms went on board.
 [380]
@@ -366,9 +387,17 @@ clear from the island crags, an echo returned an answering cry.  Terror fell on 
 [395]
 The trumpet with its blast set all their side afire, and instantly, at the word of command, with the even stroke of foaming oars they struck the briny deep.  Swiftly they all came clear into view.  Their right wing, well marshalled,
 [400]
-led on in orderly advance, next their whole army pressed on against us, and at the same time a loud shout met our ears:  On, you men of  !  Free your native land. Free your children, your wives, the temples of your fathers' gods,
+led on in orderly advance, next their whole army pressed on against us, and at the same time a loud shout met our ears: 
+
+Y#
+
+On, you men of Hellas!  Free your native land. Free your children, your wives, the temples of your fathers' gods,
 [405]
-and the tombs of your ancestors.  Now you are fighting for all you have.   Then from our side arose in response the mingled clamor of Persian speech, and straightaway the ships dashed together their bronze prows.  It was a ship of  
+and the tombs of your ancestors.  Now you are fighting for all you have.   
+
+Z#
+
+Then from our side arose in response the mingled clamor of Persian speech, and straightaway the ships dashed together their bronze prows.  It was a ship of Hellas
 [410]
 that began the charge and chopped off in its entirety the curved stern of a Phoenician boat. Each captain drove his ship straight against some other ship.  At first the stream of the Persian army held its own. When, however, the mass of our ships had been crowded in the narrows, and none could render another aid,
 [415]
@@ -381,7 +410,7 @@ the foe kept striking and hacking them with broken oars and fragments of wrecked
 However,  you can be sure that so great a multitude of men never perished in a single day.
 
 
-
+1#
 
 Alas! In truth a vast sea of troubles has burst upon the Persians and the entire barbarian race.
 [435]

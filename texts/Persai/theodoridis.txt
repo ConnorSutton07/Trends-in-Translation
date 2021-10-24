@@ -9,7 +9,7 @@ We are the trusted dignitaries who have stayed behind when the Persian soldiers 
 Chorus:
 We have stayed behind to guard the royal halls of our Prince, Xerxes, the son of King Darius.
 
-#
+1#
 
 Chorus:
 We guard the glittering riches and the stores of gold, abundant in his Palace.
@@ -31,7 +31,7 @@ Chorus:
 They left behind Susa and Ecbatana and Kissa, with their ancient towers and went off to Greece.
 Some on horses, others on ships, more on foot, a formidable force for battle.
 
-#
+2#
 
 20
 Chorus:
@@ -63,7 +63,7 @@ Chorus:
 Chorus:
 …and all those folks whose sturdy oars slice the waters of the marshes in their huge numbers…
 
-#
+3#
 
 40
 Chorus:
@@ -88,31 +88,31 @@ Chorus:
 Chorus:
 …the Mysians, experts with the lance.
 
-#
+4#
 
 Chorus:
 Babylon, too, wealthy beyond all imagination has sent an army, a rushing river of it, ships well armed and bowmen precise at their shooting.
 Sword wielding armies led by their kings.
 
-#
+5#
 
 Chorus:
 The flower of our land has left us and Asia, who has nurtured and nourished them, now groans at their absence.
 And their parents too, groan, and their wives, as well, as they  anxiously count the days of their absence.
 
-#
+6#
 
 65
 Chorus:
 Our royal army, leveler of cities, has already come and gone across to the lands of the opposite shore, yoking the neck of Helle’s sea, Athama’s daughter, with a bridge of rope-harnessed boats.
 
-#
+7#
 
 71
 Chorus:
 Our war-loving king, the king of all of Asia’s men, spreads his divine battle flock of soldiers across the face of the whole earth, both by foot and by ship, trusting his mighty commanders.   A child who, like Perseus, was born in the house of gold.  A man equal to the gods.
 
-#
+8#
 
 81
 Chorus:
@@ -121,7 +121,7 @@ With eyes spewing the black flame of a bloodthirsty dragon he drives angrily his
 Chorus:
 Drives them against an enemy whose glory is made by the spear, war-loving men, skilled in the bow and arrow.
 
-#
+9#
 
 Chorus:
 Who can stand against this tide?
@@ -130,7 +130,7 @@ A flood of soldiers.
 No barriers are sturdy enough to withstand this unconquerable ocean of men.
 There’s no one strong enough to stand and fight against the brave hearts of Persia’s men!
 
-#
+A#
 
 90
 Chorus:
@@ -143,9 +143,13 @@ Fate will fawn on him, use flattering words on him and lure him into her traps o
 Chorus:
 It’s an ancient way. It’s the will of the gods and the doing of Fate to have the Persian men always engaged in battle, in destroying castles, in pursuing cavalries and in demolishing cities.
 
+B#
+
 100
 Chorus:
 But our soldiers have now learnt the ways of the frothing wide sea, the white waters swelling with the might of the frenzied winds. They now know them and they can trust their well-made tackles and clever machines to carry them across the salty deep.
+
+C#
 
 Chorus:
 And that is why my heart is cloaked with gloom and my soul shakes with fear!
@@ -153,6 +157,8 @@ I fear that the groan shout of the words, “Oh my Persian men, they are gone!�
 
 Chorus:
 I fear that the sound of the words, “Souza, our great city is now empty of men!” will spread across our great land!
+
+D#
 
 120
 Chorus:
@@ -170,6 +176,8 @@ Chorus:
 And I fear that the beds will be soaked with the tears of women longing for their men.
 Persian girls who, with pain and sorrow said farewell to their war-loving and eager-hearted husbands and now cry tenderly alone.
 
+E#
+
 140
 Chorus:
 But come! Persians, we now must get together and think deep and hard about the fortunes of our King, Xerxes, son of Darius, member of the same ancient race as us. Let us seat ourselves on the steps of this ancient palace here.
@@ -178,6 +186,8 @@ They sit at the steps
 
 Chorus:
 Which of the two is holding sway in a war, the tip of the arrow or the cutting point of the spear?
+
+F#
 
 150
 Chorus: Sees Atossa in the wings
@@ -195,6 +205,8 @@ Beloved Queen! Atossa, most splendid Queen of the slender Persian women! Aged mo
 Chorus:
 You were the wife of a god and now the mother of a god, that is, if our ancient Fate has not abandoned our army.
 
+G#
+
 159
 Atossa:
 This is the very reason why I have just left my chambers -chambers that I once shared with Darius- and my glittering palace to come here. I won’t hide this from you, my friends but my own soul is also trembling with worry and it’s not a worry that simply springs out of my imagination.
@@ -206,10 +218,14 @@ That men who have no wealth will never see their Fortune smile at them, not in p
 So far as wealth is concerned, here we have plenty of it. What terrifies my eyes, though, is the absence of our Lord because the eye of a house is its master and Xerxes is the eye of this palace.
 So, come then, old friends! Come, my trusty Persians and give me your thoughts on the matter. Only you can give me good advice.
 
+H#
+
 173
 Chorus:
 Atossa, Queen of our land, be certain of this:
 There will never be a need for you to ask us twice about performing some deed or word for you. It shall be performed to the best of our ability. In all cases we shall be your most trusted guides. You have asked for the council of those who love you.
+
+I#
 
 Atossa:
 From the day that my son raised an army and went off to lie waste and conquer the land of the Ionians I have spent not a single night without dreaming many ominous dreams but last night’s dream was the most vivid yet.
@@ -217,16 +233,24 @@ From the day that my son raised an army and went off to lie waste and conquer th
 Let me tell it to you.
 Two women appeared in my dream. Both dressed in gorgeous clothes, one in Persian, the other, in Greek. Their splendid beauty and stature was like none we see among us these days.
 In the dream, both were from the same race but Fate allotted Greece to be the fatherland of one of them and for the other, she was given the land of barbarians.
+
+J#
+
 And it appeared to me that these two women were fighting with each other about something, when, suddenly, my son appears and tries to bring peace between them.
 190
 Finally, in his attempt to do so, he places their heads through the yoke of his chariot, the one next to the other, with the yoke straps over their necks.
 The first seemed to enjoy this and held the straps in her mouth obediently. The other woman, though, struggled hard with the straps and tore them to shreds and then destroyed the yoke itself with her own hands. My son, Xerxes fell off the chariot. Darius, his father was standing next to him giving him courage and feeling sorry for him. But then Xerxes turns towards Darius and, at the sight of his father, tears his own clothes in a frenzy.
 200
+
+K#
+
 That was the dream I saw.
 When I woke up, I went to the clear-running stream and washed my hands for purification. After that I went to the altar to make offerings to the gods and to pray for their help and protection, to avert some future misfortune. Such offerings and prayers that are appropriate to them.
 But suddenly I saw an eagle, my friends, rushing into Apolo’s shrine, looking for protection. The sight was so terrifying, I stood there speechless. A falcon then rushes into the shrine and with its sharp talons extended, attacks the eagle’s head viciously, while the poor bird stood there silently accepting its fate, submitting its torn body to its enemy.
 210
 A terrible vision for my eyes and a horrible story for your ears. Terrible for you indeed, because, you know well, my friends that if my son succeeds in this war he will become famous throughout the land but, if he is not, even though he will not have to answer to the State for his deeds it will suffice that he survives the war and he will still be, as he always was, the Lord of this country.
+
+L#
 
 Chorus:
 Queen, mother of our land, we want our words to neither alarm you nor give you unwarranted courage but if your thoughts are that the dream is ominous then seek refuge in the will of the gods and pray to them that for our own good and the good of your son, they turn all evil away and let all your good wishes for us, for your kingdom and for all things you love, be fulfilled.
@@ -244,11 +268,15 @@ That is our advice, my Queen, which we offer you in kindness and as our minds re
 Chorus:
 And all these signs are propitious and will emerge as good things from all angles.
 
+M#
+
 Atossa:
 Yes, you are the first interpreter of my dreams and your explanation of them shows that they bode well for my son and my household.  May the gods provide us this joy!
 The moment I return to the palace I shall do as you say, in respect of the proper sacrifices to the gods and to the dead.
 231
 But tell me friends, what part of earth does Athens occupy?
+
+N#
 
 Chorus:
 Towards the West, my Queen. There, where our god, Helios, goes down.
@@ -297,6 +325,8 @@ Chorus: Sees the Herald in the distance
 Ah! I can see a Herald running towards us and I think he must be a Persian.
 Good or bad, he has news for us. You will soon know the full details of the matter, my Lady.
 
+O#
+
 Enter the Herald
 
 249
@@ -306,6 +336,8 @@ Our cities, our kingdom, our huge river of wealth, all are gone now! All are ash
 Oh, what a horrible job it is to be the first herald to delivers such painful news!
 But news needs to be told in full, my Persian friends!
 Our whole army, the whole of our barbarian army is lost!
+
+P#
 
 Chorus:
 Oh, such bitter, bitter news!
@@ -327,6 +359,8 @@ Herald:
 Yes, cry the loss of our army! Cry its full destruction!
 And I, too cry because I have managed to return, a hope not hoped for before!
 
+Q#
+
 Chorus:
 We lived too long!
 
@@ -345,6 +379,8 @@ What was the use? What good could have come out of sending all our might away fr
 271
 Herald:
 The beaches of Salamis and all the shores around about it are clogged with the bodies of dead men.
+
+R#
 
 Chorus:
 Our men, you say, the bodies of our beloved men, in their splendid clothes are tossed and battered by the salty waters, lifeless, now driven above, now driven beneath the ocean surface? Oh!
@@ -379,6 +415,8 @@ How many sons and husbands she has killed!
 Chorus:
 And all in vain!
 
+S#
+
 290
 Atossa:
 This dreadful news have confounded me!
@@ -396,17 +434,24 @@ Atossa:
 Ah! Your words shine a bright light inside my palace.
 A bright day has followed a black-shrouded night.
 
+T#
+
 Herald:
 But not for Artemabares. This man, who lead ten thousand horse, is now being dashed against Silenia’s rugged shores.
 And, with a light thud, Dadakes, who led one thousand men, was thrown overboard by an enemy spear.  Tenagon, the chief and bravest amongst his Bactrian native tribe, now wanders the seas around Ajax’s island.  Lileus, Arsames and Argestes, all three killed by the enemy, are now thrashing about the harsh shores of the island that nurtures doves.
 311
 Arkteus, who lived by the mouth of the Egyptian Nile, as well as Adeues and Pharnuchus of the mighty shield, all these three were thrown overboard from the same ship.
 And Matalus from Chrysa, leader of myriads of men, chief of the Black Cavalry –some thirty thousand in number- he, too fell and as he fell, his glorious long and bushy auburn beard changed colour and took the purple colour of blood.
+
+U#
+
 Arabus, the priest and Artames from Bactria, their corpses, too, have settled for ever at that cruel place.
 320
 Amistris, too, as well as Amphistreaus, owner of the hard-working spear and famous Ariomardus whose death the folk from Sardis mourned, and Seisames, the Mysian, Tharybdis, the handsome and noble Lyrnaian, chief of two hundred and fifty ships, all of them met their end in  battle and there their twisted bodies lie.
 Syennesis, too, the bravest among them, Governor of Cilicia, a soldier who single-handedly caused much trouble to the enemy, he, too has fallen to his death in glory.
 I have made mention of only a few of our dreadful losses; such leaders whom my memory recalls.
+
+V#
 
 331
 Atossa:
@@ -427,6 +472,8 @@ So, the city of the goddess is still unconquered?
 Herald:
 That’s right, my Lady. So long as their men live, the city’s towers will be secure.
 
+W#
+
 350
 Atossa:
 And how did the naval battle begin? Who made the first move?
@@ -437,6 +484,9 @@ Neither, my Lady. Rather some evil spirit or other, some destructive curse that 
 361
 When Xerxes heard this, instead of seeing the trap the Greeks set on him, or even the hatred the Gods had against him, ordered his captains to get their ships ready. And then, he told them that the very moment the sun withdrew his rays from the earth and darkness covered the sky, they should line up all their ships in three ranks and guard the whispering waters of the passes and, as well, to also surround Ajax’s island, so that if the Greek ships escaped their death by some secret passage or other, then, they should all be caught and beheaded.
 372
+
+X#
+
 Xerxes gave these orders with such confidence, my Lady, because he had no idea what the gods had in store for him.
 And so, our captains, orderly and obediently, prepared their evening meal while our sailors quietly went about getting their oars ready, tying them at their well crafted rowlocks.
 Then, when the light of the day receded and the night had arrived, every oarsman and every armed man went aboard his ship and each long line of them called out to the line behind it to follow them.
@@ -449,7 +499,13 @@ This was no solemn song the Greeks were singing. This was no song of grief and o
 And suddenly, their flat oars obeyed some command and they sliced the salty waters of the deep. Almost immediately after that, they were there, in front of us!
 400
 First came their right wing: orderly, calmly and then, close behind it, came the rest of their fleet. They rushed hard at us with a great shout:
+
+Y#
+
 “Charge! Greek men, set your country free! Save your children, your wives, the holy temples of your fathers’ gods, the sacred tombs of your ancestors! Now is the time to fight for all these things!”
+
+Z#
+
 The Persians answered that shout with a frightened murmur… but there was no time to do anything. Ship crashed her bronze beak upon a ship, the first being a Greek one that sheared off the figure head of a Phoenician ship.
 411
 Captains from both sides drove their ships against each other.
@@ -468,6 +524,8 @@ Groans and wails spread all across the wide sea right up until the black darknes
 429
 But the disasters we suffered, my Lady!
 The disasters are so many that if you were to ask me to tell them all I would not reach their end for ten whole days my Lady, because, my Lady, be certain of this: no other single day saw the deaths of so many men.
+
+1#
 
 Atossa:
 Ah!
