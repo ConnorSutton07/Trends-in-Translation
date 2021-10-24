@@ -15,7 +15,7 @@ class Translation:
         self.lines = len(self.text)
         self.polarity_score = SentimentIntensityAnalyzer().polarity_scores
         self.delimiter = delimiter
-        self.stopwords = ["ye", "thy", "thee", "hast", "chorus", "strophe", "antistrophe", "thou", "pg", "o'er", "chor", "hath"]
+        self.stopwords = ["ye", "thy", "thee", "hast", "chorus", "strophe", "antistrophe", "thou", "pg", "o'er", "chor", "hath", "0"]
 
     def print_info(self) -> None:
         print(f"{self.translator}, {self.year}. Lines: {self.lines}")
@@ -65,10 +65,10 @@ class Translation:
         sign = score / np.abs(score) if score != 0 else 1
         return (score ** 2) * sign
 
-    def generate_wordcloud(self) -> WordCloud:
+    def generate_wordcloud(self, size) -> WordCloud:
         stopwords = set(STOPWORDS)
         stopwords.update(self.stopwords)
-        return WordCloud(stopwords = stopwords, background_color = "white").generate(" \n ".join(self.text))
+        return WordCloud(stopwords = stopwords, background_color = "white", width = size[0], height = size[1]).generate(" \n ".join(self.text))
 
     @staticmethod
     def load_text(file: str) -> List[str]:

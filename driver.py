@@ -45,7 +45,7 @@ class Driver:
         for t in translations:
             t.print_info()
             plt.figure()
-            plt.imshow(t.generate_wordcloud(), interpolation = 'bilinear')
+            plt.imshow(t.generate_wordcloud(size = (400, 400)), interpolation = 'bilinear', cmap = 'Paired')
             plt.axis('off')
             plt.savefig(os.path.join(self.paths["figures"], "wordcloud_" + t.lastname + ".jpg"))
             #plt.show()
