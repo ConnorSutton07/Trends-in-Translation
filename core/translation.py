@@ -1,9 +1,14 @@
 from __future__ import annotations
-from typing import List
-from nltk.sentiment import SentimentIntensityAnalyzer
-from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+import nltk
 import os
 import numpy as np
+import re
+
+from typing import List
+from nltk.sentiment import SentimentIntensityAnalyzer
+from nltk.stem import WordNetLemmatizer
+from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+
 
 class Translation:
     def __init__(self, info: dict, path: str, delimiter: str = '#') -> Translation:
@@ -14,8 +19,9 @@ class Translation:
         self.text = self.load_text(os.path.join(path, self.file))
         self.lines = len(self.text)
         self.polarity_score = SentimentIntensityAnalyzer().polarity_scores
+        self.lemmatize = WordNetLemmatizer().lemmatize
         self.delimiter = delimiter
-        self.stopwords = ["ye", "thy", "thee", "hast", "chorus", "strophe", "antistrophe", "thou", "pg", "o'er", "chor", "hath", "0"]
+        self.stopwords = set(nltk.corpus.stopwords.words('english') + ["ye", "thy", "thee", "hast", "chorus", "strophe", "antistrophe", "thou", "pg", "o'er", "chor", "hath", "0"])
 
     def print_info(self) -> None:
         print(f"{self.translator}, {self.year}. Lines: {self.lines}")
@@ -41,11 +47,13 @@ class Translation:
             index += 1
         return scores
 
-    def sentiment_by_section(self, amplification = 5):
-        entire_text = " \n ".join(self.text)
-        print(f"Sections: {entire_text.count('#')}")
-        sections = entire_text.split('#')
-        scores = np.zeros((entire_text.count('#') + 1, ))
+    def sentiment_by_section(self, amplification = 1):
+        #entire_text = " \n ".join(self.text)
+        sections = self.preprocess_text()
+        #print(entire_text)
+        print(f"Sections: {len(sections)}")
+        #sections = entire_text.split('#')
+        scores = np.zeros((len(sections) + 1, ))
 
         index = 0
         for section in sections:
@@ -75,3 +83,39 @@ class Translation:
         with open(file, encoding = "utf8") as f:
             contents = f.readlines()
         return contents
+
+    def preprocess_text(self, lemmatize: bool = True):
+        text = ' '.join(self.text)
+        sections = text.split('#')
+
+        for i, section in enumerate(sections):
+            # Remove all the special characters
+            section = re.sub(r'\W', ' ', str(section))
+
+            # remove all single characters
+            section = re.sub(r'\s+[a-zA-Z]\s+', ' ', section)
+
+            # Remove single characters from the start
+            section = re.sub(r'\^[a-zA-Z]\s+', ' ', section)
+
+            # Substituting multiple spaces with single space
+            section = re.sub(r'\s+', ' ', section, flags=re.I)
+
+            section = section.lower()
+            #block = [word for word in block if word not in self.stopwords]
+            #print(block)
+
+            if lemmatize:
+                tokens = section.split()
+                #print(tokens)
+                tokens = [self.lemmatize(word) for word in tokens]
+                tokens = [word for word in tokens if word not in self.stopwords]
+                #tokens = [word for word in tokens if len(word) > 3]
+                #print(tokens)
+
+                section = ' '.join(tokens)
+
+            sections[i] = section 
+
+        return sections
+    
