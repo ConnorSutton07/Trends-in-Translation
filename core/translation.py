@@ -48,11 +48,14 @@ class Translation:
         return scores
 
     def sentiment_by_section(self, amplification = 1):
-        #entire_text = " \n ".join(self.text)
-        sections = self.preprocess_text()
+        entire_text = " \n ".join(self.text)
+        sections = entire_text.split('#')
+        for i, section in enumerate(sections):
+            sections[i] = self.preprocess_text(sections[i])
+        #sections = self.preprocess_text()
         #print(entire_text)
         print(f"Sections: {len(sections)}")
-        #sections = entire_text.split('#')
+        #
         scores = np.zeros((len(sections) + 1, ))
 
         index = 0
@@ -84,38 +87,66 @@ class Translation:
             contents = f.readlines()
         return contents
 
-    def preprocess_text(self, lemmatize: bool = True):
-        text = ' '.join(self.text)
-        sections = text.split('#')
+    @staticmethod
+    def preprocess_text(text: str, lemmatize: bool = True):
+        #Remove all the special characters
+        text = re.sub(r'\W', ' ', str(text))
 
-        for i, section in enumerate(sections):
-            # Remove all the special characters
-            section = re.sub(r'\W', ' ', str(section))
+        # remove all single characters
+        text = re.sub(r'\s+[a-zA-Z]\s+', ' ', text)
 
-            # remove all single characters
-            section = re.sub(r'\s+[a-zA-Z]\s+', ' ', section)
+        # Remove single characters from the start
+        text = re.sub(r'\^[a-zA-Z]\s+', ' ', text)
 
-            # Remove single characters from the start
-            section = re.sub(r'\^[a-zA-Z]\s+', ' ', section)
+        # Substituting multiple spaces with single space
+        text = re.sub(r'\s+', ' ', text, flags=re.I)
 
-            # Substituting multiple spaces with single space
-            section = re.sub(r'\s+', ' ', section, flags=re.I)
+        text = text.lower()
+        #block = [word for word in block if word not in self.stopwords]
+        #print(block)
 
-            section = section.lower()
-            #block = [word for word in block if word not in self.stopwords]
-            #print(block)
+        if lemmatize:
+            tokens = text.split()
+            #print(tokens)
+            tokens = [self.lemmatize(word) for word in tokens]
+            tokens = [word for word in tokens if word not in self.stopwords]
+            #tokens = [word for word in tokens if len(word) > 3]
+            #print(tokens)
+            text = ' '.join(tokens)
+        
+        return text
 
-            if lemmatize:
-                tokens = section.split()
-                #print(tokens)
-                tokens = [self.lemmatize(word) for word in tokens]
-                tokens = [word for word in tokens if word not in self.stopwords]
-                #tokens = [word for word in tokens if len(word) > 3]
-                #print(tokens)
+        # text = ' '.join(self.text)
+        # sections = text.split('#')
 
-                section = ' '.join(tokens)
+        # for i, section in enumerate(sections):
+        #     # Remove all the special characters
+        #     section = re.sub(r'\W', ' ', str(section))
 
-            sections[i] = section 
+        #     # remove all single characters
+        #     section = re.sub(r'\s+[a-zA-Z]\s+', ' ', section)
 
-        return sections
+        #     # Remove single characters from the start
+        #     section = re.sub(r'\^[a-zA-Z]\s+', ' ', section)
+
+        #     # Substituting multiple spaces with single space
+        #     section = re.sub(r'\s+', ' ', section, flags=re.I)
+
+        #     section = section.lower()
+        #     #block = [word for word in block if word not in self.stopwords]
+        #     #print(block)
+
+        #     if lemmatize:
+        #         tokens = section.split()
+        #         #print(tokens)
+        #         tokens = [self.lemmatize(word) for word in tokens]
+        #         tokens = [word for word in tokens if word not in self.stopwords]
+        #         #tokens = [word for word in tokens if len(word) > 3]
+        #         #print(tokens)
+
+        #         section = ' '.join(tokens)
+
+        #     sections[i] = section 
+
+        # return sections
     
