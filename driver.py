@@ -23,7 +23,15 @@ class Driver:
             translations.append(Translation(info, self.paths["Persai"]))
 
         #self.plot_wordcloud(translations)
-        self.plot_sentiment(translations)
+        #self.plot_sentiment(translations)
+        for t in translations:
+            t.print_info()
+            text = t.get_delimited_text()
+            text = analysis.preprocess_text(text, t.stopwords)
+            corpus = []
+            for section in text:
+                corpus.append(section.split(' '))
+            analysis.analyze_embeddings(corpus)
         
     def plot_sentiment(self, translations: list) -> None:
         fig = plt.figure()
@@ -54,30 +62,5 @@ class Driver:
             plt.savefig(os.path.join(self.paths["figures"], "wordcloud_" + t.lastname + ".jpg"))
             #plt.show()
 
-    def analyze_embeddings(self, t):
-        embedding_size = 60
-        window_size = 40
-        min_word = 5
-        down_sampling = 1e-2
+    
 
-        text = ' '.join(t.preprocess_text()) 
-        final_corpus = [preprocess_text(sentence) for sentence in artificial_intelligence if sentence.strip() !='']
-
-        word_punctuation_tokenizer = nltk.WordPunctTokenizer()
-        word_tokenized_corpus = [word_punctuation_tokenizer.tokenize(sent) for sent in final_corpus]
-
-        ft_model = FastText(word_tokenized_corpus,
-                      size=embedding_size,
-                      window=window_size,
-                      min_count=min_word,
-                      sample=down_sampling,
-                      sg=1,
-                      iter=100)
-
-        print(ft_model.wv['artificial'])
-
-        semantically_similar_words = {words: [item[0] for item in ft_model.wv.most_similar([words], topn=5)]
-                  for words in ['artificial', 'intelligence', 'machine', 'network', 'recurrent', 'deep']}
-
-        for k,v in semantically_similar_words.items():
-            print(k+":"+str(v))

@@ -1,6 +1,7 @@
 from __future__ import annotations
 from nltk.sentiment import SentimentIntensityAnalyzer
 from nltk.stem import WordNetLemmatizer
+from gensim.models.fasttext import FastText
 import re 
 import numpy as np
 
@@ -55,8 +56,34 @@ def preprocess_text(text: List[str], stopwords, lemmatize: bool = True) -> List[
 
     return processed_text
 
+def analyze_embeddings(text):
+    embedding_size = 60
+    window_size = 40
+    min_word = 5
+    down_sampling = 1e-2
+    #print(text)
 
+    # text = ' '.join(t.preprocess_text()) 
+    # final_corpus = [preprocess_text(sentence) for sentence in artificial_intelligence if sentence.strip() !='']
 
+    # word_punctuation_tokenizer = nltk.WordPunctTokenizer()
+    # word_tokenized_corpus = [word_punctuation_tokenizer.tokenize(sent) for sent in final_corpus]
 
+    model = FastText(text,
+                    vector_size=embedding_size,
+                    window=window_size,
+                    min_count=min_word,
+                    sample=down_sampling,
+                    sg=1) #,
+                    # iter=100)
+
+    #print(model.wv['greece'])
+
+    semantically_similar_words = {words: [item[0] for item in model.wv.most_similar([words], topn=5)]
+                for words in ['greece', 'persia', 'men', 'women']}
+
+    for k,v in semantically_similar_words.items():
+        print(k+":"+str(v))
+    print('-----------------------------------')
 
     
