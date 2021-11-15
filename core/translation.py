@@ -2,11 +2,7 @@ from __future__ import annotations
 import nltk
 import os
 import numpy as np
-import re
 
-from typing import List
-from nltk.sentiment import SentimentIntensityAnalyzer
-from nltk.stem import WordNetLemmatizer
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 
@@ -16,18 +12,19 @@ class Translation:
         self.lastname = self.translator.split(" ")[-1]
         self.year = info['year']
         self.file = info['text-file']
-        self.text = self.load_text(os.path.join(path, self.file))
-        self.lines = len(self.text)
-        self.polarity_score = SentimentIntensityAnalyzer().polarity_scores
-        self.lemmatize = WordNetLemmatizer().lemmatize
+        self.lines = self.load_text(os.path.join(path, self.file))
+        self.text = '\n'.join(self.lines)
         self.delimiter = delimiter
         self.stopwords = set(nltk.corpus.stopwords.words('english') + ["ye", "thy", "thee", "hast", "chorus", "strophe", "antistrophe", "thou", "pg", "o'er", "chor", "hath", "0"])
 
     def print_info(self) -> None:
-        print(f"{self.translator}, {self.year}. Lines: {self.lines}")
+        print(f"{self.translator}, {self.year}")
 
     def get_info(self) -> str:
         return self.translator + ", " + str(self.year)
+
+    def get_delimited_text(self) -> List[str]:
+        return self.text.split(self.delimiter)
 
     def sentiment_by_line(self) -> np.array:
         sentiment = np.zeros((self.lines,))
