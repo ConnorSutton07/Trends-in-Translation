@@ -2,9 +2,12 @@ from __future__ import annotations
 from nltk.sentiment import SentimentIntensityAnalyzer
 from nltk.stem import WordNetLemmatizer
 from gensim.models.fasttext import FastText
+from icecream import ic
+from sklearn.decomposition import PCA
 import re 
 import numpy as np
-from icecream import ic
+import matplotlib.pyplot as plt
+
 
 def sentiment_score(text: str) -> dict:
     info = SentimentIntensityAnalyzer().polarity_scores(text)
@@ -61,7 +64,7 @@ def preprocess_text(text: List[str], stopwords = [], lemmatize: bool = True, rep
 
     return processed_text
 
-def analyze_embeddings(text):
+def analyze_embeddings(text: list, key_words: List[str]):
     embedding_size = 60
     window_size = 40
     min_word = 5
@@ -75,11 +78,12 @@ def analyze_embeddings(text):
                     sg=1) #,
                     # iter=100)
 
-    semantically_similar_words = {words: [item[0] for item in model.wv.most_similar([words], topn=5)]
-                for words in ['greece', 'greek', 'persia', 'persian', 'men', 'women', 'woe', 'brave']}
+    semantically_similar_words = {words: [item[0] for item in model.wv.most_similar([words], topn=5)] for words in key_words}
 
-    for k,v in semantically_similar_words.items():
-        print(k+":"+str(v))
-    print('-----------------------------------')
+    all_words = sum([[k] + v for k, v in semantically_similar_words.items()], [])
+    word_vectors = model.wv[all_words]
+    pca = PCA(n_components = 2)
+    p_comps = pca.fit_transform(word_vectors)
 
+    return semantically_similar_words, all_words, p_comps
     
