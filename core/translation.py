@@ -26,8 +26,8 @@ class Translation:
     def get_delimited_text(self) -> List[str]:
         return self.text.split(self.delimiter)
     
-    def generate_wordcloud(self, size) -> WordCloud:
-        return WordCloud(stopwords = settings.stopwords, background_color = "white", width = size[0], height = size[1]).generate(" \n ".join(self.text))
+    def generate_wordcloud(self, size, stopwords) -> WordCloud:
+        return WordCloud(stopwords = stopwords, background_color = "white", width = size[0], height = size[1]).generate(self.text)
 
     @staticmethod
     def load_text(file: str) -> List[str]:
