@@ -12,3 +12,13 @@ replacements = [
     ("persians", "persian")
 ]
 
+key_words = [
+    'greece',
+    'greek',
+    'persia', 
+    'persian', 
+    'men', 
+    'women', 
+    'woe', 
+    'brave'
+]
