@@ -3,6 +3,7 @@ import os
 import json
 from core.translation import Translation
 import core.analysis as analysis
+import core.settings as settings
 import matplotlib.pyplot as plt 
 import numpy as np
 
@@ -21,19 +22,8 @@ class Driver:
         translations = []
         for info in data:
             translations.append(Translation(info, self.paths["Persai"]))
-
-        #self.plot_wordcloud(translations)
-        #self.plot_sentiment(translations)
-        for t in translations:
-            t.print_info()
-            text = t.get_delimited_text()
-            text = analysis.preprocess_text(text, t.stopwords)
-            corpus = []
-            for section in text:
-                corpus.append(section.split(' '))
-            analysis.analyze_embeddings(corpus)
         
-    def plot_sentiment(self, translations: list) -> None:
+    def sentiment(self, translations: list) -> None:
         fig = plt.figure()
         title = "Aeschylus' Persians | Sentiment Over Time"
         for t in translations:
@@ -53,7 +43,7 @@ class Driver:
         plt.savefig(os.path.join(self.paths["figures"], "persians_comparison_ooo.png"), dpi = 100)
         plt.show()
 
-    def plot_wordcloud(self, translations: list) -> None:
+    def wordcloud(self, translations: list) -> None:
         for t in translations:
             t.print_info()
             plt.figure()
@@ -61,6 +51,16 @@ class Driver:
             plt.axis('off')
             plt.savefig(os.path.join(self.paths["figures"], "wordcloud_" + t.lastname + ".jpg"))
             #plt.show()
+
+    def embeddings(self, translations: list) -> None:
+        for t in translations:
+            t.print_info()
+            text = t.get_delimited_text()
+            text = analysis.preprocess_text(text, stopwords = settings.stopwords, replacements = settings.replacements)
+            corpus = []
+            for section in text:
+                corpus.append(section.split(' '))
+            analysis.analyze_embeddings(corpus)
 
     
 
