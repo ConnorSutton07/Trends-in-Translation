@@ -4,9 +4,9 @@ from nltk.stem import WordNetLemmatizer
 from gensim.models.fasttext import FastText
 import re 
 import numpy as np
+from icecream import ic
 
 def sentiment_score(text: str) -> dict:
-    #print(text)
     info = SentimentIntensityAnalyzer().polarity_scores(text)
     return info['pos'] - info['neg']
 
@@ -30,7 +30,7 @@ def sentiment_by_interval(text: List[str], divisor: int) -> List[float]:
         index += 1
     return scores
 
-def preprocess_text(text: List[str], stopwords, lemmatize: bool = True) -> List[str]:
+def preprocess_text(text: List[str], stopwords = [], lemmatize: bool = True, replacements: List[tuple] = None) -> List[str]:
     """ 
     Prepares text to be analyzed with word embeddings, sentiment analysis, etc.
     Removes stopwords and unnecessary characters
@@ -52,6 +52,11 @@ def preprocess_text(text: List[str], stopwords, lemmatize: bool = True) -> List[
             tokens = [lemmatize_text(word) for word in tokens]
             tokens = [word for word in tokens if word not in stopwords]
             block = ' '.join(tokens)
+
+        if replacements != None:
+            for u, v in replacements:
+                block = block.replace(u, v)
+
         processed_text.append(block)
 
     return processed_text
@@ -61,13 +66,6 @@ def analyze_embeddings(text):
     window_size = 40
     min_word = 5
     down_sampling = 1e-2
-    #print(text)
-
-    # text = ' '.join(t.preprocess_text()) 
-    # final_corpus = [preprocess_text(sentence) for sentence in artificial_intelligence if sentence.strip() !='']
-
-    # word_punctuation_tokenizer = nltk.WordPunctTokenizer()
-    # word_tokenized_corpus = [word_punctuation_tokenizer.tokenize(sent) for sent in final_corpus]
 
     model = FastText(text,
                     vector_size=embedding_size,
@@ -77,10 +75,8 @@ def analyze_embeddings(text):
                     sg=1) #,
                     # iter=100)
 
-    #print(model.wv['greece'])
-
     semantically_similar_words = {words: [item[0] for item in model.wv.most_similar([words], topn=5)]
-                for words in ['greece', 'persia', 'men', 'women']}
+                for words in ['greece', 'greek', 'persia', 'persian', 'men', 'women', 'woe', 'brave']}
 
     for k,v in semantically_similar_words.items():
         print(k+":"+str(v))

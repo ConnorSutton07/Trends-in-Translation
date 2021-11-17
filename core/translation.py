@@ -2,6 +2,7 @@ from __future__ import annotations
 import nltk
 import os
 import numpy as np
+import core.settings
 
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
@@ -15,7 +16,6 @@ class Translation:
         self.lines = self.load_text(os.path.join(path, self.file))
         self.text = '\n'.join(self.lines)
         self.delimiter = delimiter
-        self.stopwords = set(nltk.corpus.stopwords.words('english') + ["ye", "thy", "thee", "hast", "chorus", "strophe", "antistrophe", "thou", "pg", "o'er", "chor", "hath", "0"])
 
     def print_info(self) -> None:
         print(f"{self.translator}, {self.year}")
@@ -27,9 +27,7 @@ class Translation:
         return self.text.split(self.delimiter)
     
     def generate_wordcloud(self, size) -> WordCloud:
-        stopwords = set(STOPWORDS)
-        stopwords.update(self.stopwords)
-        return WordCloud(stopwords = stopwords, background_color = "white", width = size[0], height = size[1]).generate(" \n ".join(self.text))
+        return WordCloud(stopwords = settings.stopwords, background_color = "white", width = size[0], height = size[1]).generate(" \n ".join(self.text))
 
     @staticmethod
     def load_text(file: str) -> List[str]:
