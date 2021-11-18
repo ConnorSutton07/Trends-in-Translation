@@ -7,7 +7,7 @@ The motivation from this project came from noticing contrasting translations fro
 
 (Penguin Classics edition; Translator: Martin Hammond, 2006)
 
-> "So will he be able to perceive the proper ripeness and beauty of old age, whether in man or woman: and whatsoever else it is that is beautiful and alluring in whatsoever is, > with chaste and continent eyes he will soon find out and discern." 
+> "So will he be able to perceive the proper ripeness and beauty of old age, whether in man or woman: and whatsoever else it is that is beautiful and alluring in whatsoever is,  with chaste and continent eyes he will soon find out and discern." 
 
 (Gutenberg.org version, Translator: Meric Casaubon, 1634)
 
