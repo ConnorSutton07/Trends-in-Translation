@@ -75,13 +75,13 @@ class Driver:
                 corpus.append(section.split(' '))
 
             similar_words, all_words, pcs = analysis.analyze_embeddings(corpus, settings.key_words)
-            plt.figure(figsize=(18, 10))
+            plt.figure(figsize=(12, 8))
             plt.scatter(pcs[:, 0], pcs[:, 1], c='red')
             for word, x, y in zip(all_words, pcs[:, 0], pcs[:, 1]):
                 plt.annotate(word, xy=(x+0.01, y+0.0), xytext=(0, 0), textcoords='offset points')
             plt.xlabel("PC1")
             plt.ylabel("PC2")
-            plt.title(f"Word Embeddings for {t.get_info()}") 
+            plt.title(f"Translation: {t.get_info()}") 
             plt.savefig(os.path.join(self.paths["embeddings"], "embeddings_" + t.lastname + ".jpg"))
 
             if printing:
