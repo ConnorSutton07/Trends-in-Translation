@@ -65,7 +65,7 @@ def preprocess_text(text: List[str], stopwords = [], lemmatize: bool = True, rep
     return processed_text
 
 def analyze_embeddings(text: list, key_words: List[str]):
-    embedding_size = 60
+    embedding_size = 64
     window_size = 40
     min_word = 5
     down_sampling = 1e-2
@@ -84,6 +84,7 @@ def analyze_embeddings(text: list, key_words: List[str]):
     word_vectors = model.wv[all_words]
     pca = PCA(n_components = 2)
     p_comps = pca.fit_transform(word_vectors)
+    explained_variance = pca.explained_variance_
 
-    return semantically_similar_words, all_words, p_comps
+    return semantically_similar_words, all_words, p_comps, explained_variance
     
