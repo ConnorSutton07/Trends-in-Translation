@@ -7,7 +7,7 @@ import core.settings as settings
 import matplotlib.pyplot as plt 
 import numpy as np
 from core.translation import Translation
-
+from adjustText import adjust_text
 
 class Driver:
     def __init__(self) -> None:
@@ -74,13 +74,17 @@ class Driver:
             for section in text:
                 corpus.append(section.split(' '))
 
-            similar_words, all_words, pcs = analysis.analyze_embeddings(corpus, settings.key_words)
+            similar_words, all_words, pcs, explained_variance = analysis.analyze_embeddings(corpus, settings.key_words)
             plt.figure(figsize=(12, 8))
             plt.scatter(pcs[:, 0], pcs[:, 1], c='red')
+
+            annotations = []
             for word, x, y in zip(all_words, pcs[:, 0], pcs[:, 1]):
-                plt.annotate(word, xy=(x+0.01, y+0.0), xytext=(0, 0), textcoords='offset points')
-            plt.xlabel("PC1")
-            plt.ylabel("PC2")
+                annotations.append(plt.annotate(word, xy=(x+0.01, y+0.0), xytext=(0, 0), textcoords='offset points'))
+            adjust_text(annotations)
+            
+            plt.xlabel(f"PC1 | {explained_variance[0]}")
+            plt.ylabel(f"PC2 | {explained_variance[1]}")
             plt.title(f"Translation: {t.get_info()}") 
             plt.savefig(os.path.join(self.paths["embeddings"], "embeddings_" + t.lastname + ".jpg"))
 
