@@ -1,7 +1,13 @@
 import nltk
 
+#-----------PREPROCESSING--------------#
+
 stopwords = set(nltk.corpus.stopwords.words('english') + 
     ["ye", "thy", "thee", "hast", "chorus", "strophe", "antistrophe", "thou", "pg", "o'er", "chor", "hath", "0", "thine"])
+
+no_lemmatization = [
+    'salamis'
+]
 
 replacements = [
     ("men", "man"),
@@ -12,6 +18,11 @@ replacements = [
     ("persians", "persian")
 ]
 
+#----------WORD EMBEDDINGS-------------#
+TOPN = 2
+
+
+
 key_words = [
     'greece',
     'greek',
@@ -20,5 +31,7 @@ key_words = [
     'men', 
     'women', 
     'woe', 
-    'brave'
+    'brave',
+    'glory'
 ]
+

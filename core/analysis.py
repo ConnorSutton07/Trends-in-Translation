@@ -52,7 +52,7 @@ def preprocess_text(text: List[str], stopwords = [], lemmatize: bool = True, rep
 
         if lemmatize:
             tokens = block.split()
-            tokens = [lemmatize_text(word) for word in tokens]
+            tokens = [lemmatize_text(word) for word in tokens if word not in no_lemmatization]
             tokens = [word for word in tokens if word not in stopwords]
             block = ' '.join(tokens)
 
