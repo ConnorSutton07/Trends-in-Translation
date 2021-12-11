@@ -80,7 +80,6 @@ class Driver:
             similar_words, all_words, pcs, explained_variance = analysis.analyze_embeddings(corpus, settings.key_words)
             all_words, indices = np.unique(all_words, return_index=True)
             pcs = pcs[indices]
-            return
 
             with plt.style.context('Solarize_Light2'):
                 plt.figure(figsize=(12, 8))
