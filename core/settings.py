@@ -21,15 +21,13 @@ replacements = [
 #----------WORD EMBEDDINGS-------------#
 TOPN = 2
 
-
-
 key_words = [
     'greece',
     'greek',
     'persia', 
     'persian', 
-    'men', 
-    'women', 
+    'man', 
+    'woman', 
     'woe', 
     'brave',
     'glory'

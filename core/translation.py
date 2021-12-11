@@ -11,7 +11,7 @@ class Translation:
     def __init__(self, info: dict, path: str, delimiter: str = '#') -> Translation:
         self.translator = info['translator']
         self.lastname = self.translator.split(" ")[-1]
-        self.year = info['year']
+        self.year = int(info['year'])
         self.file = info['text-file']
         self.lines = self.load_text(os.path.join(path, self.file))
         self.text = '\n'.join(self.lines)

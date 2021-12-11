@@ -33,7 +33,7 @@ def sentiment_by_interval(text: List[str], divisor: int) -> List[float]:
         index += 1
     return scores
 
-def preprocess_text(text: List[str], stopwords = [], lemmatize: bool = True, replacements: List[tuple] = None) -> List[str]:
+def preprocess_text(text: List[str], stopwords = [], lemmatize: bool = True, replacements: List[tuple] = None, no_lemmatization: List[str] = []) -> List[str]:
     """ 
     Prepares text to be analyzed with word embeddings, sentiment analysis, etc.
     Removes stopwords and unnecessary characters
@@ -78,9 +78,9 @@ def analyze_embeddings(text: list, key_words: List[str]):
                     sg=1) #,
                     # iter=100)
 
-    semantically_similar_words = {words: [item[0] for item in model.wv.most_similar([words], topn=3)] for words in key_words}
+    semantically_similar_words = {words: [item[0] for item in model.wv.most_similar([words], topn=2)] for words in key_words}
 
-    all_words = sum([[k] + v for k, v in semantically_similar_words.items()], [])
+    all_words = np.array(sum([[k] + v for k, v in semantically_similar_words.items()], []))
     word_vectors = model.wv[all_words]
     pca = PCA(n_components = 2)
     p_comps = pca.fit_transform(word_vectors)

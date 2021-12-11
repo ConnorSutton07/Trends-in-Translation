@@ -22,9 +22,10 @@ class Driver:
         self.paths["embeddings"] = os.path.join(self.paths["figures"], "embeddings")
 
         self.modes = {
-            'sentiment' : self.sentiment,
-            'wordclouds': self.wordclouds,
-            'embeddings': self.embeddings
+            'sentiment' :          self.sentiment,
+            'wordclouds':          self.wordclouds,
+            'embeddings':          self.embeddings,
+            'embeddings-animated': self.animated_embeddings
         }
 
         args = self.parse_args()
@@ -36,6 +37,7 @@ class Driver:
         translations = []
         for info in data:
             translations.append(Translation(info, self.paths["Persai"]))
+        translations.sort(key = lambda t: t.year)
         self.modes[self.mode](translations)
         
     def sentiment(self, translations: list) -> None:
@@ -76,20 +78,24 @@ class Driver:
                 corpus.append(section.split(' '))
 
             similar_words, all_words, pcs, explained_variance = analysis.analyze_embeddings(corpus, settings.key_words)
+            all_words, indices = np.unique(all_words, return_index=True)
+            pcs = pcs[indices]
+            return
 
             with plt.style.context('Solarize_Light2'):
                 plt.figure(figsize=(12, 8))
-                plt.scatter(pcs[:, 0], pcs[:, 1], c='red')
+                plt.rcParams.update({'font.family':'serif'})
+                plt.scatter(pcs[:, 0], pcs[:, 1], c='darkgoldenrod')
 
                 annotations = []
                 for word, x, y in zip(all_words, pcs[:, 0], pcs[:, 1]):
-                    annotations.append(plt.annotate(word, xy=(x+0.01, y+0.0), xytext=(0, 0), textcoords='offset points'))
+                    annotations.append(plt.annotate(word, xy=(x+0.015, y-0.005), xytext=(0, 0), textcoords='offset points'))
                 adjust_text(annotations)
 
-                plt.xlabel(f"PC1 | {explained_variance[0]}")
-                plt.ylabel(f"PC2 | {explained_variance[1]}")
+                plt.xlabel("PC1 | " + "{:.2%}".format(explained_variance[0]))
+                plt.ylabel("PC2 | " + "{:.2%}".format(explained_variance[1]))
                 plt.title(f"Translation: {t.get_info()}") 
-                plt.savefig(os.path.join(self.paths["embeddings"], "embeddings_" + t.lastname + ".jpg"))
+                plt.savefig(os.path.join(self.paths["embeddings"], "embeddings_" + t.lastname + ".jpg"), dpi=300)
 
             if printing:
                 t.print_info()
@@ -101,26 +107,28 @@ class Driver:
         embedding_info = []
         for i, t in enumerate(translations):
             text = t.get_delimited_text()
-            text = analysis.preprocess_text(text, stopwords = settings.stopwords, replacements = settings.replacements)
+            text = analysis.preprocess_text(text, stopwords = settings.stopwords, replacements = settings.replacements, no_lemmatization = settings.no_lemmatization)
             corpus = []
             for section in text:
                 corpus.append(section.split(' '))
             similar_words, all_words, pcs, explained_variance = analysis.analyze_embeddings(corpus, settings.key_words)
-            embedding_info.append([similar_words, all_words, pcs, explained_variance, t.get_info()])
-        embedding_info.append(embedding_info[0])
-        
-        j = 0 
-        fig = plt.figure(figsize=(12, 8))
-        ax = plt.axes()
-        N = 200
+            key_words = []
+            for k, v in similar_words.items():
+                key_words.append(k)
+            embedding_info.append([key_words, all_words, pcs, explained_variance, t.get_info()])
+        embedding_info.append(embedding_info[0]) # loop back to first translation at the end
+
+
+        with plt.style.context('Solarize_Light2'):
+            fig = plt.figure(figsize=(12, 8))
+            ax = plt.axes()
+        N = 150
         delay = 20
 
         def animate(i, N, embedding_info):
             pause = (i // N) % 2 == 0
             ci = i % N 
             j = i // (N * 2)
-            
-            #print(i, j, pause)
 
             current_points = np.array(list(zip(embedding_info[j][2][:, 0], embedding_info[j][2][:, 1])))
             next_points = current_points if pause else np.array(list(zip(embedding_info[j + 1][2][:, 0], embedding_info[j + 1][2][:, 1])))
@@ -135,22 +143,29 @@ class Driver:
                 points[k][0] = current_points[k][0] + ((ci * xdist) / N)
                 points[k][1] = current_points[k][1] + ((ci * ydist) / N)
             ax.scatter(points[:, 0], points[:, 1])
-
-            annotations = []
-            for word, x, y in zip(embedding_info[j][1],  points[:, 0], points[:, 1]):
-                annotations.append(ax.annotate(word, xy=(x + 0.01, y + 0.0), xytext=(0, 0), textcoords='offset points'))
-            adjust_text(annotations)
             ax.set_xlim((-0.7, 1.25))
-            ax.set_ylim((-0.5, 0.6))
+            ax.set_ylim((-0.4, 0.7))
             ax.set_title(embedding_info[j][4])
+            #annotations = []
+            if pause:
+                for word, x, y in zip(embedding_info[j][1],  points[:, 0], points[:, 1]):
+                    ax.annotate(word, xy=(x + 0.01, y + 0.0), xytext=(0, 0), textcoords='offset points')
+            else:
+                for word, x, y in zip(embedding_info[j][1],  points[:, 0], points[:, 1]):
+                    if word in embedding_info[j][0]:
+                        ax.annotate(word, xy=(x + 0.01, y + 0.0), xytext=(0, 0), textcoords='offset points')
+
+            #adjust_text(annotations)
+            
             return ax
             
         anim = animation.FuncAnimation(fig, 
                                        animate, 
-                                       frames=(len(embedding_info) * N * 2),
+                                       frames=(len(embedding_info) * N * 2 - N),
                                        interval = delay,
-                                       fargs = (N, embedding_info))
-        anim.save(os.path.join(self.paths["embeddings"], "animated_embeddings.gif"))
+                                       fargs = (N, embedding_info),
+                                       repeat = True)
+        anim.save(os.path.join(self.paths["embeddings"], "embeddings_animated.gif"))
 
     def parse_args(self):
         parser = argparse.ArgumentParser()
