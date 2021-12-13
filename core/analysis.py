@@ -84,7 +84,7 @@ def analyze_embeddings(text: list, key_words: List[str]):
     word_vectors = model.wv[all_words]
     pca = PCA(n_components = 2)
     p_comps = pca.fit_transform(word_vectors)
-    explained_variance = pca.explained_variance_
+    explained_variance = pca.explained_variance_ratio_
 
     return semantically_similar_words, all_words, p_comps, explained_variance
     
