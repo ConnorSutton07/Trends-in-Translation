@@ -2,11 +2,12 @@ import sys
 import os 
 import json
 import argparse
-import core.analysis as analysis
-import core.settings as settings
 import matplotlib.pyplot as plt 
 import matplotlib.animation as animation
 import numpy as np
+from core import analysis
+from core import settings
+from core import ui
 from core.translation import Translation
 from adjustText import adjust_text
 
@@ -16,6 +17,7 @@ class Driver:
         self.paths["current"]    = os.getcwd()
         self.paths["texts"]      = os.path.join(self.paths["current"], "texts")
         self.paths["Persai"]     = os.path.join(self.paths["texts"], "Persai")
+        self.paths["Gallico"]    = os.path.join(self.paths["texts"], "De Bello Gallico")
         self.paths["figures"]    = os.path.join(self.paths["current"], "figures")
         self.paths["sentiment"]  = os.path.join(self.paths["figures"], "sentiment")
         self.paths["wordclouds"] = os.path.join(self.paths["figures"], "wordclouds")
@@ -32,11 +34,11 @@ class Driver:
         self.mode = args.mode
 
     def run(self) -> None:
-        with open(os.path.join(self.paths["Persai"], "info.json")) as infile:
+        with open(os.path.join(self.paths["Gallico"], "info.json")) as infile:
             data = json.load(infile)
         translations = []
         for info in data:
-            translations.append(Translation(info, self.paths["Persai"]))
+            translations.append(Translation(info, self.paths["Gallico"]))
         translations.sort(key = lambda t: t.year)
         self.modes[self.mode](translations)
         
@@ -77,7 +79,7 @@ class Driver:
             for section in text:
                 corpus.append(section.split(' '))
 
-            similar_words, all_words, pcs, explained_variance = analysis.analyze_embeddings(corpus, settings.key_words)
+            similar_words, all_words, pcs, explained_variance = analysis.analyze_embeddings(corpus, settings.key_words['gallico'])
             all_words, indices = np.unique(all_words, return_index=True)
             pcs = pcs[indices]
 

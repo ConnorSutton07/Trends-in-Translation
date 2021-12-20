@@ -21,15 +21,29 @@ replacements = [
 #----------WORD EMBEDDINGS-------------#
 TOPN = 2
 
-key_words = [
-    'greece',
-    'greek',
-    'persia', 
-    'persian', 
-    'man', 
-    'woman', 
-    'woe', 
-    'brave',
-    'glory'
-]
+key_words = {
+    'persai': 
+       ['greece',
+        'greek',
+        'persia', 
+        'persian', 
+        'man', 
+        'woman', 
+        'woe', 
+        'brave',
+        'glory'],
+    'gallico':
+        ['man',
+         'woman',
+         'victory',
+         'brave',
+         'glory',
+         'rome',
+         'romans',
+         'caeser',
+         'belgae',
+         'death',
+         'mountain',
+         'river']
+}
 
