@@ -78,7 +78,7 @@ def analyze_embeddings(text: list, key_words: List[str]):
                     sg=1) #,
                     # iter=100)
 
-    semantically_similar_words = {words: [item[0] for item in model.wv.most_similar([words], topn=3)] for words in key_words}
+    semantically_similar_words = {words: [item[0] for item in model.wv.most_similar([words], topn=4)] for words in key_words}
 
     all_words = np.array(sum([[k] + v for k, v in semantically_similar_words.items()], []))
     word_vectors = model.wv[all_words]

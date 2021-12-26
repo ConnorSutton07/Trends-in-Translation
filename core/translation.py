@@ -3,9 +3,7 @@ import nltk
 import os
 import numpy as np
 import core.settings
-
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
-
 
 class Translation:
     def __init__(self, info: dict, path: str, delimiter: str = '#') -> Translation:

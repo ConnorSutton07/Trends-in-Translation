@@ -3,7 +3,7 @@ import nltk
 #-----------PREPROCESSING--------------#
 
 stopwords = set(nltk.corpus.stopwords.words('english') + 
-    ["ye", "thy", "thee", "hast", "chorus", "strophe", "antistrophe", "thou", "pg", "o'er", "chor", "hath", "0", "thine"])
+    ["ye", "thy", "thee", "hast", "chorus", "strophe", "antistrophe", "thou", "pg", "o'er", "chor", "hath", "0", "thine", "chapter"])
 
 no_lemmatization = [
     'salamis'
@@ -19,10 +19,10 @@ replacements = [
 ]
 
 #----------WORD EMBEDDINGS-------------#
-TOPN = 2
+TOPN = 4
 
 key_words = {
-    'persai': 
+    'Persai': 
        ['greece',
         'greek',
         'persia', 
@@ -32,18 +32,19 @@ key_words = {
         'woe', 
         'brave',
         'glory'],
-    'gallico':
+    'Gallicum':
         ['man',
          'woman',
-         'victory',
+         'caesar',
          'brave',
-         'glory',
+         'soldier',
+         'camp',
+         'gaul',
          'rome',
-         'romans',
-         'caeser',
-         'belgae',
-         'death',
-         'mountain',
-         'river']
+         'senate',
+         'enemy',
+         'army',
+         'great', 
+         'war']
 }
 
