@@ -85,7 +85,7 @@ class Driver:
         print("Creating embeddings...")
         for t in tqdm(translations):
             text = t.get_delimited_text()
-            text = analysis.preprocess_text(text, stopwords = settings.stopwords, replacements = settings.replacements)
+            text = analysis.preprocess_text(text, stopwords = settings.stopwords, replacements = settings.replacements, no_lemmatization = settings.no_lemmatization)
             corpus = []
             for section in text:
                 corpus.append(section.split(' '))
