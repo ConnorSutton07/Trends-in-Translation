@@ -2,14 +2,12 @@ import sys
 import os 
 import json
 import argparse
-import matplotlib.pyplot as plt 
 import numpy as np
 from core import analysis
 from core import settings
 from core import ui
 from core import graph
 from core.translation import Translation
-from adjustText import adjust_text
 from tqdm import tqdm
 
 class Driver:
@@ -124,21 +122,21 @@ class Driver:
         print("Animating embeddings...")
         graph.animated_embeddings(embedding_info, save_path)
 
-    def sentiment(self, translations: list) -> None:
-        fig = plt.figure()
-        title = "Sentiment Over Time"
-        for t in translations:
-            t.print_info()
-            text = t.get_delimited_text()
-            text = analysis.preprocess_text(text, settings.stopwords)
-            s = analysis.sentiment_by_section(text)
-            x = np.arange(s.size)
-            plt.plot(x, s, label = t.get_info())    
-        plt.title(title)
-        plt.legend()
-        plt.xticks(np.arange(1, s.size + 1))
-        plt.xlabel("Interval")
-        plt.ylabel("Positivity / Negativity")
-        fig.set_size_inches(12, 6)
-        plt.savefig(os.path.join(self.paths["sentiment"], "sentiment_comparison.png"), dpi = 100)
-        plt.show()
+    # def sentiment(self, translations: list) -> None:
+    #     fig = plt.figure()
+    #     title = "Sentiment Over Time"
+    #     for t in translations:
+    #         t.print_info()
+    #         text = t.get_delimited_text()
+    #         text = analysis.preprocess_text(text, settings.stopwords)
+    #         s = analysis.sentiment_by_section(text)
+    #         x = np.arange(s.size)
+    #         plt.plot(x, s, label = t.get_info())    
+    #     plt.title(title)
+    #     plt.legend()
+    #     plt.xticks(np.arange(1, s.size + 1))
+    #     plt.xlabel("Interval")
+    #     plt.ylabel("Positivity / Negativity")
+    #     fig.set_size_inches(12, 6)
+    #     plt.savefig(os.path.join(self.paths["sentiment"], "sentiment_comparison.png"), dpi = 100)
+    #     plt.show()
