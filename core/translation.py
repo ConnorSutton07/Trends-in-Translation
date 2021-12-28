@@ -21,6 +21,9 @@ class Translation:
     def get_info(self) -> str:
         return self.translator + ", " + str(self.year)
 
+    def get_text(self) -> str:
+        return self.text 
+
     def get_delimited_text(self) -> List[str]:
         return self.text.split(self.delimiter)
     

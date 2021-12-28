@@ -1,3 +1,4 @@
+from __future__ import annotations
 import sys
 import os 
 import json
@@ -41,18 +42,17 @@ class Driver:
         print()
 
     def run(self, _ = None, __ = None) -> None:
-        #ui.runModes(modes)
-        print("here")
-        translation_path = self.select_translation()
-        if translation_path is None:
-            return
-        with open(os.path.join(self.paths[translation_path], "info.json")) as infile:
-            data = json.load(infile)
-        translations = []
-        for info in data:
-            translations.append(Translation(info, self.paths[translation_path]))
-        translations.sort(key = lambda t: t.year)
-        self.select_mode()(translations, translation_path)
+        while True:
+            translation_path = self.select_translation()
+            if translation_path is None:
+                return
+            with open(os.path.join(self.paths[translation_path], "info.json")) as infile:
+                data = json.load(infile)
+            translations = []
+            for info in data:
+                translations.append(Translation(info, self.paths[translation_path]))
+            translations.sort(key = lambda t: t.year)
+            self.select_mode()(translations, translation_path)
 
     def select_mode(self) -> callable:
         num_modes = len(self.modes)
@@ -74,6 +74,20 @@ class Driver:
             return self.texts[index][1]
         return None
 
+    def select_keywords(self) -> List[str]:
+        keys = list(settings.key_words.keys())
+        num_keys = len(keys)
+        msg = "Select Keyword Set:"
+        for i, key in enumerate(keys, start=1):
+            msg += f"\n   {i}) {key}"
+        back_index = num_keys + 1
+        msg += f"\n   {back_index}) Back"
+        index = ui.getValidInput(msg, dtype=int, valid=range(1, num_keys + 2)) - 1
+        if index != back_index - 1:
+            return settings.key_words[keys[index]]
+        return None
+
+
     def wordclouds(self, translations: list, text_path: str) -> None:
         print("Generating wordclouds for the following translations:")
         for t in translations:
@@ -82,15 +96,18 @@ class Driver:
             graph.wordcloud(t, settings.stopwords, save_path)
 
     def embeddings(self, translations: list, text_path: str, printing: bool = True) -> None:
+        key_words = self.select_keywords()
+        if key_words is None: return
         print("Creating embeddings...")
         for t in tqdm(translations):
             text = t.get_delimited_text()
+            counts = np.zeros((len(key_words), ))
             text = analysis.preprocess_text(text, stopwords = settings.stopwords, replacements = settings.replacements, no_lemmatization = settings.no_lemmatization)
             corpus = []
             for section in text:
+                counts += np.array([section.count(w) for w in key_words])
                 corpus.append(section.split(' '))
-
-            similar_words, all_words, pcs, explained_variance = analysis.analyze_embeddings(corpus, settings.key_words[text_path])
+            similar_words, all_words, pcs, explained_variance = analysis.analyze_embeddings(corpus, key_words)
             all_words, indices = np.unique(all_words, return_index=True)
             pcs = pcs[indices]
             save_path = os.path.join(self.paths["figures"], text_path, "embeddings", "embeddings_" + t.lastname + ".jpg")
@@ -99,8 +116,8 @@ class Driver:
             if printing:
                 print()
                 t.print_info()
-                for k,v in similar_words.items():
-                    print(f"{k}: {v}")
+                for i, (k,v) in enumerate(similar_words.items()):
+                    print(f"{k} ({counts[i]}): {v}")
                 print('-----------------------------------')
 
     def animated_embeddings(self, translations: list, text_path: str, printing = False) -> None:
