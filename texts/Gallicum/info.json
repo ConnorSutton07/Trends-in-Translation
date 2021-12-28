@@ -4,5 +4,11 @@
       "year": 1869,
       "age": 35,
       "text-file": "mcdevitte.txt"
+    },
+    {
+      "translator": "Henry John Edwards",
+      "year": 1917,
+      "age": 48,
+      "text-file": "edwards.txt"
     }
 ]
