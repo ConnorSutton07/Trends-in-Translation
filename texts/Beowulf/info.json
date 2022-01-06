@@ -1,0 +1,27 @@
+[
+    {
+        "translator": "Francis Barton Gummere",
+        "year": 1910,
+        "text-file": "gummere.txt"
+    },
+    {
+        "translator": "John Lesslie Hall",
+        "year": 1897,
+        "text-file": "hall.txt"
+    },
+    {
+        "translator": "Seamus Heaney",
+        "year": 1999,
+        "text-file": "heaney.txt"
+    },
+    {
+        "translator": "A. S. Kline",
+        "year": 2012,
+        "text-file": "kline.txt"
+    },
+    {
+        "translator": "David Breeden",
+        "year": 1999,
+        "text-file": "breeden.txt"
+    }
+]
