@@ -18,6 +18,7 @@ class Driver:
         self.paths["texts"]      = os.path.join(self.paths["current"], "texts")
         self.paths["Persai"]     = os.path.join(self.paths["texts"], "Persai")
         self.paths["Gallicum"]   = os.path.join(self.paths["texts"], "Gallicum")
+        self.paths["Beowulf"]    = os.path.join(self.paths["texts"], "Beowulf")
         self.paths["figures"]    = os.path.join(self.paths["current"], "figures")
         self.paths["sentiment"]  = os.path.join(self.paths["figures"], "sentiment")
         self.paths["wordclouds"] = os.path.join(self.paths["figures"], "wordclouds")
@@ -25,7 +26,8 @@ class Driver:
 
         self.texts = [
             ("Commentarii de Bello Gallico", "Gallicum"),
-            ("Persai", "Persai")
+            ("The Persians", "Persai"),
+            ("Beowulf", "Beowulf")
         ]
 
         self.modes = [
@@ -87,7 +89,6 @@ class Driver:
             return settings.key_words[keys[index]]
         return None
 
-
     def wordclouds(self, translations: list, text_path: str) -> None:
         print("Generating wordclouds for the following translations:")
         for t in translations:
@@ -107,11 +108,11 @@ class Driver:
             for section in text:
                 counts += np.array([section.count(w) for w in key_words])
                 corpus.append(section.split(' '))
-            similar_words, all_words, pcs, explained_variance = analysis.analyze_embeddings(corpus, key_words)
+            similar_words, all_words, pcs, explained_variance = analysis.analyze_embeddings(corpus, key_words, settings.embeddings_kwargs)
             all_words, indices = np.unique(all_words, return_index=True)
             pcs = pcs[indices]
             save_path = os.path.join(self.paths["figures"], text_path, "embeddings", "embeddings_" + t.lastname + ".jpg")
-            graph.embeddings(t, all_words, pcs, explained_variance, save_path)
+            graph.embeddings(t, all_words, pcs, explained_variance, save_path, adjust_annotations = False)
 
             if printing:
                 print()
@@ -138,22 +139,3 @@ class Driver:
         save_path = save_path = os.path.join(self.paths["figures"], text_path, "embeddings", "embeddings_animated.gif")
         print("Animating embeddings...")
         graph.animated_embeddings(embedding_info, save_path)
-
-    # def sentiment(self, translations: list) -> None:
-    #     fig = plt.figure()
-    #     title = "Sentiment Over Time"
-    #     for t in translations:
-    #         t.print_info()
-    #         text = t.get_delimited_text()
-    #         text = analysis.preprocess_text(text, settings.stopwords)
-    #         s = analysis.sentiment_by_section(text)
-    #         x = np.arange(s.size)
-    #         plt.plot(x, s, label = t.get_info())    
-    #     plt.title(title)
-    #     plt.legend()
-    #     plt.xticks(np.arange(1, s.size + 1))
-    #     plt.xlabel("Interval")
-    #     plt.ylabel("Positivity / Negativity")
-    #     fig.set_size_inches(12, 6)
-    #     plt.savefig(os.path.join(self.paths["sentiment"], "sentiment_comparison.png"), dpi = 100)
-    #     plt.show()

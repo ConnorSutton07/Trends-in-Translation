@@ -64,19 +64,20 @@ def preprocess_text(text: List[str], stopwords = [], lemmatize: bool = True, rep
 
     return processed_text
 
-def analyze_embeddings(text: list, key_words: List[str]):
+def analyze_embeddings(text: list, key_words: List[str], kwargs: dict):
     embedding_size = 64
     window_size = 40
     min_word = 5
     down_sampling = 1e-2
 
-    model = FastText(text,
-                    vector_size=embedding_size,
-                    window=window_size,
-                    min_count=min_word,
-                    sample=down_sampling,
-                    sg=1) #,
-                    # iter=100)
+    model = FastText(
+        text,
+        vector_size = kwargs["vector_size"],
+        window      = kwargs["window"],
+        min_count   = kwargs["min_count"],
+        sample      = kwargs["sample"],
+        sg          = kwargs["sg"]
+    )
 
     semantically_similar_words = {words: [item[0] for item in model.wv.most_similar([words], topn=4)] for words in key_words}
     all_words = np.array(sum([[k] + v for k, v in semantically_similar_words.items()], []))

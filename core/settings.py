@@ -14,19 +14,29 @@ no_lemmatization = [
 replacements = [
     ("men", "man"),
     ("women", "woman"),
-    ("greece", "hellas"),
-    ("greeks", "hellene"),
-    ("greek", "hellene"),
-    ("persians", "persian"),
-    ("helvetian", "helvetii"),
-    ("aeduan", "aedui"),
-    ("roman", "rome"),
-    ("gallic", "gaul"),
-    ("divitiacus", "diviciacus")
+    ("lady", "woman"),
+    ("greatest", "great")
+    # ("greece", "hellas"),
+    # ("greeks", "hellene"),
+    # ("greek", "hellene"),
+    # ("persians", "persian"),
+    # ("helvetian", "helvetii"),
+    # ("aeduan", "aedui"),
+    # ("roman", "rome"),
+    # ("gallic", "gaul"),
+    # ("divitiacus", "diviciacus")
 ]
 
 #----------WORD EMBEDDINGS-------------#
 TOPN = 4
+
+embeddings_kwargs = {
+    "vector_size": 100,
+    "window": 10,
+    "min_count": 5,
+    "sample": 1e-2,
+    "sg": 1
+}
 
 key_words = {
     'Persai': [
@@ -55,7 +65,7 @@ key_words = {
         'great', 
         'war'
     ],
-    'States and Characters': [
+    'Roman & Gallic States and Characters': [
         'caesar',
         'gaul',
         'vercingetorix',
@@ -67,6 +77,22 @@ key_words = {
         'ariovistus',
         'bituriges',
         'belgae'
+    ],
+    'Beowulf': [
+        'battle',
+        'warrior',
+        'hall',
+        'king',
+        'beowulf',
+        'war',
+        'man',
+        'sword',
+        'grendel',
+        'treasure',
+        'lord',
+        'hero',
+        'good',
+        'evil'
     ]
 }
 
