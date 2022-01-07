@@ -4,8 +4,6 @@ import os
 import json
 import argparse
 import numpy as np
-import pandas as pd
-import dataframe_image as dfi
 from core import analysis
 from core import settings
 from core import ui
@@ -101,6 +99,8 @@ class Driver:
     def embeddings(self, translations: list, text_path: str, printing: bool = True) -> None:
         key_words = self.select_keywords()
         if key_words is None: return
+        kwargs = settings.embeddings_kwargs 
+        #vector_sizes = [32, 64, 100, 200]
         print("Creating embeddings...")
         for t in tqdm(translations):
             text = t.get_delimited_text()
@@ -110,18 +110,14 @@ class Driver:
             for section in text:
                 counts += np.array([section.count(w) for w in key_words])
                 corpus.append(section.split(' '))
-            similar_words, all_words, pcs, explained_variance = analysis.analyze_embeddings(corpus, key_words, settings.embeddings_kwargs)
+            similar_words, all_words, pcs, explained_variance = analysis.analyze_embeddings(corpus, key_words, kwargs)
             all_words, indices = np.unique(all_words, return_index=True)
             pcs = pcs[indices]
-            plot_save_path = os.path.join(self.paths["figures"], text_path, "embeddings", f"embeddings__{t.lastname}.jpg")
-            table_save_path = os.path.join(self.paths["figures"], text_path, "tables", f"table_{t.lastname}.tex")
-            graph.scatter_embeddings(t, all_words, pcs, explained_variance, plot_save_path, adjust_annotations = False)
-            #graph.tabulate_embeddings(similar_words, table_save_path)
-            table = pd.DataFrame.from_dict(similar_words)
-            table.style.hide_index()
-            dfi.export(table, "test.png")
-
-
+            points = analysis.normalize2D(pcs[:, 0], pcs[:, 1])
+            plot_save_path = os.path.join(self.paths["figures"], text_path, "embeddings", f"embeddings_{t.lastname}.jpg")
+            table_save_path = os.path.join(self.paths["figures"], text_path, "tables", f"table_{t.lastname}.png")
+            graph.scatter_embeddings(t, all_words, points, explained_variance, plot_save_path, adjust_annotations = False)
+            graph.tabulate_embeddings(similar_words, table_save_path)
             if printing:
                 print()
                 t.print_info()
