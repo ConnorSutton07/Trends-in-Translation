@@ -10,7 +10,7 @@ def wordcloud(t: Translation, stopwords: List[str], save_path: str) -> None:
     plt.axis('off')
     plt.savefig(save_path)
 
-def embeddings(t: Translation, words: List[str], pcs, explained_variance, save_path: str, adjust_annotations: bool = True) -> None:
+def scatter_embeddings(t: Translation, words: List[str], pcs, explained_variance, save_path: str, adjust_annotations: bool = True) -> None:
     with plt.style.context('Solarize_Light2'):
         plt.figure(figsize=(12, 8))
         plt.rcParams.update({'font.family':'serif'})
@@ -27,7 +27,14 @@ def embeddings(t: Translation, words: List[str], pcs, explained_variance, save_p
         plt.title(f"Translation: {t.get_info()}") 
         plt.savefig(save_path, dpi=200)
 
-def animated_embeddings(embedding_info, save_path: str) -> None:
+def tabulate_embeddings(embeddings: dict, file: str):
+    with open(file, "w") as f:
+        f.write('\\begin{table}[ht]\n\\caption{Resolved issues}\n\\centering\n')
+        f.write('\\begin{tabular}{@{}c c@{}}\n\t\\toprule\n\t{\\bfseries Issue-Id} & {\\bfseries Summary} \\\\\n\t\\midrule\n\t')
+        f.write("\\\\ \n\t".join(["{} & {}".format(_k, ", ".join(_v)) for _k, _v in sorted(embeddings.items())]))
+        f.write('\\\\\n\t\\bottomrule\n\\end{tabular}\n\\label{table:nonlin}\n\\end{table}')
+
+def animate_embeddings(embedding_info, save_path: str) -> None:
     with plt.style.context('Solarize_Light2'):
         fig = plt.figure(figsize=(12, 8))
         ax = plt.axes()

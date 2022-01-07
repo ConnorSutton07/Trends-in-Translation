@@ -4,6 +4,8 @@ import os
 import json
 import argparse
 import numpy as np
+import pandas as pd
+import dataframe_image as dfi
 from core import analysis
 from core import settings
 from core import ui
@@ -111,8 +113,14 @@ class Driver:
             similar_words, all_words, pcs, explained_variance = analysis.analyze_embeddings(corpus, key_words, settings.embeddings_kwargs)
             all_words, indices = np.unique(all_words, return_index=True)
             pcs = pcs[indices]
-            save_path = os.path.join(self.paths["figures"], text_path, "embeddings", "embeddings_" + t.lastname + ".jpg")
-            graph.embeddings(t, all_words, pcs, explained_variance, save_path, adjust_annotations = False)
+            plot_save_path = os.path.join(self.paths["figures"], text_path, "embeddings", f"embeddings__{t.lastname}.jpg")
+            table_save_path = os.path.join(self.paths["figures"], text_path, "tables", f"table_{t.lastname}.tex")
+            graph.scatter_embeddings(t, all_words, pcs, explained_variance, plot_save_path, adjust_annotations = False)
+            #graph.tabulate_embeddings(similar_words, table_save_path)
+            table = pd.DataFrame.from_dict(similar_words)
+            table.style.hide_index()
+            dfi.export(table, "test.png")
+
 
             if printing:
                 print()
