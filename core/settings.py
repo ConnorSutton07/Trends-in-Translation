@@ -8,7 +8,12 @@ stopwords = set(nltk.corpus.stopwords.words('english') +
 no_lemmatization = [
     'salamis',
     'less',
-    'was'
+    'was',
+    'has',
+    'ere',
+    'tis',
+    'alas',
+    'erst'
 ]
 
 replacements = [
@@ -16,9 +21,11 @@ replacements = [
     ("women", "woman"),
     ("lady", "woman"),
     ("greatest", "great"),
-    ("greece", "hellas"),
-    ("greeks", "hellas"),
-    ("greek", "hellas"),
+    ("hellas", "greece"),
+    ("greeks", "greece"),
+    ("greek", "greece"),
+    ("hellene", "greece"),
+    ("dareios", "darius"),
     ("persians", "persia"),
     ("persian", "persia")
     # ("helvetian", "helvetii"),
@@ -41,7 +48,7 @@ embeddings_kwargs = {
 
 key_words = {
     'Persai': [
-        'hellas',
+        'greece',
         'persia', 
         'man', 
         'woman', 

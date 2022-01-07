@@ -22,7 +22,7 @@ def scatter_embeddings(t: Translation, words: List[str], pcs, explained_variance
         for word, x, y in zip(words, pcs[:, 0], pcs[:, 1]):
             annotations.append(plt.annotate(word, xy=(x+0.015, y-0.005), xytext=(0, 0), textcoords='offset points'))
         if adjust_annotations:
-            adjust_text(annotations)
+            adjust_text(annotations, lim=10)
 
         plt.xlabel("PC1 | " + "{:.2%}".format(explained_variance[0]))
         plt.ylabel("PC2 | " + "{:.2%}".format(explained_variance[1]))
