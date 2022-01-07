@@ -22,6 +22,14 @@ def sentiment_by_section(text: List[str]) -> List[float]:
         scores[i] = sentiment_score(section)
     return scores
 
+def normalize2D(xs: List[float], ys: List[float]):
+    norm = np.zeros( (len(xs), 2) )
+    for i, (x, y) in enumerate(zip(xs, ys)):
+        x = (x - min(xs)) / (max(xs) - min(xs))
+        y = (y - min(ys)) / (max(ys) - min(ys))
+        norm[i] = np.array([x, y])
+    return norm
+
 def sentiment_by_interval(text: List[str], divisor: int) -> List[float]:
     interval = len(text) // divisor
     if len(text) % divisor != 0: interval += 1
@@ -65,11 +73,6 @@ def preprocess_text(text: List[str], stopwords = [], lemmatize: bool = True, rep
     return processed_text
 
 def analyze_embeddings(text: list, key_words: List[str], kwargs: dict):
-    embedding_size = 64
-    window_size = 40
-    min_word = 5
-    down_sampling = 1e-2
-
     model = FastText(
         text,
         vector_size = kwargs["vector_size"],

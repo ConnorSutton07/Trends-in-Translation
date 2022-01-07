@@ -15,11 +15,12 @@ replacements = [
     ("men", "man"),
     ("women", "woman"),
     ("lady", "woman"),
-    ("greatest", "great")
-    # ("greece", "hellas"),
-    # ("greeks", "hellene"),
-    # ("greek", "hellene"),
-    # ("persians", "persian"),
+    ("greatest", "great"),
+    ("greece", "hellas"),
+    ("greeks", "hellas"),
+    ("greek", "hellas"),
+    ("persians", "persia"),
+    ("persian", "persia")
     # ("helvetian", "helvetii"),
     # ("aeduan", "aedui"),
     # ("roman", "rome"),
@@ -31,7 +32,7 @@ replacements = [
 TOPN = 4
 
 embeddings_kwargs = {
-    "vector_size": 100,
+    "vector_size": 64,
     "window": 10,
     "min_count": 5,
     "sample": 1e-2,
@@ -40,13 +41,11 @@ embeddings_kwargs = {
 
 key_words = {
     'Persai': [
-        'greece',
-        'greek',
+        'hellas',
         'persia', 
-        'persian', 
         'man', 
         'woman', 
-        'woe', 
+        'god', 
         'brave',
         'glory'
     ],
@@ -81,15 +80,13 @@ key_words = {
     'Beowulf': [
         'battle',
         'warrior',
-        'hall',
         'king',
         'beowulf',
         'war',
         'man',
+        'woman',
         'sword',
         'grendel',
-        'treasure',
-        'lord',
         'hero',
         'good',
         'evil'

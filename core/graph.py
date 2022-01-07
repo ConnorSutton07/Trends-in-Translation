@@ -3,6 +3,8 @@ from adjustText import adjust_text
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import numpy as np
+import dataframe_image as dfi
+import pandas as pd 
 
 def wordcloud(t: Translation, stopwords: List[str], save_path: str) -> None:
     plt.figure()
@@ -27,12 +29,15 @@ def scatter_embeddings(t: Translation, words: List[str], pcs, explained_variance
         plt.title(f"Translation: {t.get_info()}") 
         plt.savefig(save_path, dpi=200)
 
-def tabulate_embeddings(embeddings: dict, file: str):
-    with open(file, "w") as f:
-        f.write('\\begin{table}[ht]\n\\caption{Resolved issues}\n\\centering\n')
-        f.write('\\begin{tabular}{@{}c c@{}}\n\t\\toprule\n\t{\\bfseries Issue-Id} & {\\bfseries Summary} \\\\\n\t\\midrule\n\t')
-        f.write("\\\\ \n\t".join(["{} & {}".format(_k, ", ".join(_v)) for _k, _v in sorted(embeddings.items())]))
-        f.write('\\\\\n\t\\bottomrule\n\\end{tabular}\n\\label{table:nonlin}\n\\end{table}')
+def tabulate_embeddings(embeddings: dict, file_path: str):
+    table = pd.DataFrame.from_dict(embeddings)
+    table.style.hide_index()
+    table.style.set_properties(**{
+        'background-color': 'black',                                                   
+        'color': 'black',                       
+        'border-color': 'tan'
+    })
+    dfi.export(table, file_path)
 
 def animate_embeddings(embedding_info, save_path: str) -> None:
     with plt.style.context('Solarize_Light2'):
