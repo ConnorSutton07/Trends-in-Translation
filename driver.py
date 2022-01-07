@@ -116,7 +116,7 @@ class Driver:
             points = analysis.normalize2D(pcs[:, 0], pcs[:, 1])
             plot_save_path = os.path.join(self.paths["figures"], text_path, "embeddings", f"embeddings_{t.lastname}.jpg")
             table_save_path = os.path.join(self.paths["figures"], text_path, "tables", f"table_{t.lastname}.png")
-            graph.scatter_embeddings(t, all_words, points, explained_variance, plot_save_path, adjust_annotations = False)
+            graph.scatter_embeddings(t, all_words, points, explained_variance, plot_save_path, adjust_annotations = True)
             graph.tabulate_embeddings(similar_words, table_save_path)
             if printing:
                 print()
