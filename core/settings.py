@@ -47,7 +47,8 @@ key_words = {
         'woman', 
         'god', 
         'brave',
-        'glory'
+        'king',
+        'xerxes'
     ],
     'Gallicum': [
         'man',
