@@ -72,22 +72,16 @@ def preprocess_text(text: List[str], stopwords = [], lemmatize: bool = True, rep
 
     return processed_text
 
-def analyze_embeddings(text: list, key_words: List[str], kwargs: dict):
-    model = FastText(
-        text,
-        vector_size = kwargs["vector_size"],
-        window      = kwargs["window"],
-        min_count   = kwargs["min_count"],
-        sample      = kwargs["sample"],
-        sg          = kwargs["sg"]
-    )
+def analyze_embeddings(text: list, key_words: List[str], kwargs: dict, neighbors: dict):
+    model = FastText(text, **kwargs)
 
-    semantically_similar_words = {words: [item[0] for item in model.wv.most_similar([words], topn=4)] for words in key_words}
-    all_words = np.array(sum([[k] + v for k, v in semantically_similar_words.items()], []))
-    word_vectors = model.wv[all_words]
+    table_words = {words: [item[0] for item in model.wv.most_similar([words], topn = neighbors["table"])] for words in key_words}
+    graph_words = {words: [item[0] for item in model.wv.most_similar([words], topn = neighbors["graph"])] for words in key_words}
+    flattened_graph_words = np.array(sum([[k] + v for k, v in graph_words.items()], []))
+    word_vectors = model.wv[flattened_graph_words]
     pca = PCA(n_components = 2)
     p_comps = pca.fit_transform(word_vectors)
     explained_variance = pca.explained_variance_ratio_
 
-    return semantically_similar_words, all_words, p_comps, explained_variance
+    return table_words, flattened_graph_words, p_comps, explained_variance
     

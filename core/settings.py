@@ -36,11 +36,14 @@ replacements = [
 ]
 
 #----------WORD EMBEDDINGS-------------#
-TOPN = 4
+neighbors = {
+    "table": 5,
+    "graph": 3
+}
 
 embeddings_kwargs = {
     "vector_size": 64,
-    "window": 10,
+    "window": 15,
     "min_count": 5,
     "sample": 1e-2,
     "sg": 1
@@ -55,7 +58,8 @@ key_words = {
         'god', 
         'brave',
         'king',
-        'xerxes'
+        'xerxes',
+        'darius'
     ],
     'Gallicum': [
         'man',
