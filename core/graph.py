@@ -27,30 +27,23 @@ def scatter_embeddings(t: Translation, words: List[str], pcs, explained_variance
 
         plt.xlabel("PC1 | " + "{:.2%}".format(explained_variance[0]))
         plt.ylabel("PC2 | " + "{:.2%}".format(explained_variance[1]))
-        plt.title(f"Translation: {t.get_info()}") 
+        plt.title(f"Word Embeddings | Translation: {t.get_info()}") 
         plt.savefig(save_path, dpi=200)
 
 def tabulate_embeddings(embeddings: dict, save_path: str, t_info: str):
     table = pd.DataFrame.from_dict(embeddings)
-    table.style.hide_index()
-    table.style.set_properties(**{
-        'background-color': 'black',                                                   
-        'color': 'black',                       
-        'border-color': 'tan'
-    })
-    #bbox = tfm.Bbox([[2, 1], [10, 7]])
     with plt.style.context('Solarize_Light2'):
-        fig = plt.figure(figsize=(12, 4))
+        fig = plt.figure(figsize=(12, 3))
         plt.rcParams.update({'font.family': 'serif'})
         rowColours = ['goldenrod']
         rowLabels = [f"{i}" for i in range(1, len(table.index) + 1)]
         tbl = plt.table(cellText = table.values, rowLabels = rowLabels, colLabels = table.columns, loc = "center")
         tbl.scale(1, 2)
         tbl.auto_set_font_size(False)
-        tbl.set_fontsize(11)
-        plt.title(f"Closest Keyword Associations | Translation: {t_info}")
+        tbl.set_fontsize(8)
+        plt.title(f"Closest Semantic Neighbors For Each Keyword | Translation: {t_info}")
         plt.axis('off')
-        plt.savefig(save_path, dpi=200)
+        plt.savefig(save_path, dpi=120)
     #dfi.export(table, file_path)
 
 def animate_embeddings(embedding_info, save_path: str) -> None:

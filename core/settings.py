@@ -3,7 +3,7 @@ import nltk
 #-----------PREPROCESSING--------------#
 
 stopwords = set(nltk.corpus.stopwords.words('english') + 
-    ["ye", "thy", "thee", "hast", "chorus", "strophe", "antistrophe", "thou", "pg", "o'er", "chor", "hath", "0", "thine", "chapter"])
+    ["ye", "thy", "thee", "hast", "chorus", "strophe", "antistrophe", "thou", "pg", "o'er", "chor", "hath", "0", "thine", "chapter", "twas"])
 
 no_lemmatization = [
     'salamis',
@@ -27,7 +27,8 @@ replacements = [
     ("hellene", "greece"),
     ("dareios", "darius"),
     ("persians", "persia"),
-    ("persian", "persia")
+    ("persian", "persia"),
+    ("scyldings", "scylding")
     # ("helvetian", "helvetii"),
     # ("aeduan", "aedui"),
     # ("roman", "rome"),
