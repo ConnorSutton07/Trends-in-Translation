@@ -117,7 +117,7 @@ class Driver:
             plot_save_path = os.path.join(self.paths["figures"], text_path, "embeddings", f"embeddings_{t.lastname}.jpg")
             table_save_path = os.path.join(self.paths["figures"], text_path, "tables", f"table_{t.lastname}.png")
             graph.scatter_embeddings(t, graph_words, points, explained_variance, plot_save_path, adjust_annotations = True)
-            graph.tabulate_embeddings(table_words, table_save_path, t.get_info())
+            graph.tabulate_embeddings(table_words, table_save_path, t.get_info(), settings.neighbors["table"])
             if printing:
                 print()
                 t.print_info()

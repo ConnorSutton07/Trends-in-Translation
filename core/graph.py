@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 import matplotlib.transforms as tfm
 import matplotlib.animation as animation
 import numpy as np
-import dataframe_image as dfi
-import pandas as pd 
 
 def wordcloud(t: Translation, stopwords: List[str], save_path: str) -> None:
     plt.figure()
@@ -30,21 +28,24 @@ def scatter_embeddings(t: Translation, words: List[str], pcs, explained_variance
         plt.title(f"Word Embeddings | Translation: {t.get_info()}") 
         plt.savefig(save_path, dpi=200)
 
-def tabulate_embeddings(embeddings: dict, save_path: str, t_info: str):
-    table = pd.DataFrame.from_dict(embeddings)
+def tabulate_embeddings(embeddings: dict, save_path: str, t_info: str, length: int):
     with plt.style.context('Solarize_Light2'):
         fig = plt.figure(figsize=(12, 3))
-        plt.rcParams.update({'font.family': 'serif'})
+        plt.rcParams.update({
+            'font.family': 'serif',
+            'font.size': 12
+        })
         rowColours = ['goldenrod']
-        rowLabels = [f"{i}" for i in range(1, len(table.index) + 1)]
-        tbl = plt.table(cellText = table.values, rowLabels = rowLabels, colLabels = table.columns, loc = "center")
+        rowLabels = [f"{i}" for i in range(1, length + 1)]
+        values = np.array(list(embeddings.values())).T
+        headers = list(embeddings.keys())
+        tbl = plt.table(cellText = values, rowLabels = rowLabels, colLabels = headers, loc = "center")
         tbl.scale(1, 2)
         tbl.auto_set_font_size(False)
         tbl.set_fontsize(8)
         plt.title(f"Closest Semantic Neighbors For Each Keyword | Translation: {t_info}")
         plt.axis('off')
         plt.savefig(save_path, dpi=120)
-    #dfi.export(table, file_path)
 
 def animate_embeddings(embedding_info, save_path: str) -> None:
     with plt.style.context('Solarize_Light2'):
